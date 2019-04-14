@@ -7,6 +7,7 @@ import shutil
 import os
 import PIL
 from PIL import ExifTags
+from PIL import Image
 import pyinaturalist
 from pyinaturalist.rest_api import create_observations
 from pyinaturalist.rest_api import get_access_token
@@ -155,6 +156,8 @@ def upload_folder_single(folder, uploaded_folder, time_zone, accuracy,
                          'time_zone': time_zone,
                          'description': '',
                          'tag_list': '',
+                         # TODO: With 'No coordinates' set above, this seems to break the API now
+                         #  perhaps set a default?
                          'latitude': coordinates[0],
                          'longitude': coordinates[1],
                          'positional_accuracy': int(accuracy), # meters,

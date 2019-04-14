@@ -13,6 +13,8 @@ import sys
 import tkinter as tk
 from tkinter import Tk, Frame, Entry, TOP, X, Button, Label
 
+from creds import iNat
+
 def input_data():
     # The fields which are collected by the gui. This is what is displayed next
     # to the entry box.
@@ -23,22 +25,22 @@ def input_data():
     # the photos being imported. 
     
     # Your user name and password on the iNaturalist website. 
-    Username = ''
-    Password = ''
+    Username = iNat.USER.value
+    Password = iNat.PWD.value
     
     # You will need to make an app to be able to use this code 
     # https://www.inaturalist.org/oauth/applications/new
-    app = ''
-    secret = ''
+    app = iNat.APP_ID.value
+    secret = iNat.SECRET.value
     
     # Every photo contained in subfolders in this folder will be uploaded. The
     # species will be the name of the folder the photo was placed in. 
-    folder_name = 'C:/My Documents/Pictures/Photos to Upload'
+    folder_name = iNat.TEST_FOLDER.value
     
     # It appears all the time zones here are accepted:
     # https://gist.github.com/mjrulesamrat/0c1f7de951d3c508fb3a20b4b0b33a98
-    time_zone = 'America/Los_Angeles'
-    accuracy = 10 #Accuracy in meters
+    time_zone = 'America/New York'
+    accuracy = 50 #Accuracy in meters
     default_text = [Username, Password, app, secret, folder_name,
                     time_zone, accuracy]
     

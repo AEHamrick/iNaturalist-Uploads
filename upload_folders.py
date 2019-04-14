@@ -61,11 +61,11 @@ except:
     pass
 
     
-# Uploads all photos in folders contained in uploaded_folder
+#Uploads all photos in folders contained in uploaded_folder
 for folder in directories:
     subfolder = folder_name +'/' + folder + '/'
 #    print(subfolder)
-    upload_folder_single(subfolder, uploaded_folder, time_zone, accuracy, 
+    upload_folder_single(subfolder, uploaded_folder, time_zone, accuracy,
                          user, passw, app, secret)
 
 # Uploads photos in sub folders contained in species folders. These upload all
