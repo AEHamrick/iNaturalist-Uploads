@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 pyinaturalist = "*"
 pillow = "*"
+lxml = "*"
+gpxpy = "*"
 
 [requires]
 python_version = "3.7"

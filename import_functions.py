@@ -3,15 +3,51 @@ upload_folders.py. This is primarily functions associated with getting exif
 data from the photos, choosing a taxa based on the name of the folder
 and uploading the files to iNaturalist."""
 
+from typing import Union, List, Dict, Tuple
+import pathlib
 import shutil
 import os
+from datetime import datetime
 import PIL
-from PIL import ExifTags
-from PIL import Image
-import pyinaturalist
+from PIL import ExifTags, Image
+
 from pyinaturalist.rest_api import create_observations
 from pyinaturalist.rest_api import get_access_token
 from pyinaturalist.rest_api import add_photo_to_observation
+
+from classes import Observation
+
+
+def nearest_datetime(items: List[datetime], target: datetime):
+    '''
+
+    :param items:  Datetimes to search through
+    :param target: Datetime to match or come closest to
+    :return:
+    '''
+
+    #Didn't come up with this, pretty neat
+    return min(items, key=lambda x: abs(x - target))
+
+
+def has_donefile(d: Union[str, pathlib.Path]) -> bool:
+    '''
+    Check a directory for existence of a '.done' file used as a flag
+
+    :param d: input directory
+    :return: True if any file with the string '.done' in its name exists in input dir d else False
+    '''
+    if type(d) == str:
+        d = pathlib.Path(d)
+
+    files: List[pathlib.Path] = [x for x in d.iterdir() if x.is_file()]
+
+    if any(['.done' in x.name for x in files]):
+        return True
+    else:
+        return False
+
+
 
 # This function returns the latitude and longitude of a .jpg image
 def get_lat_long(image):
@@ -66,28 +102,30 @@ def get_lat_long(image):
     return latitude_longitude
 
 
-
 # Pulls the date information from 
-def get_date(image):
+def get_date(image: str) -> datetime:
 
-    # Pulls the date and time from the exif format, had to use 36867 to get
-    # the time the image was taken
+    # Pulls the date and time from the exif format;
+    # Exif.Image.DateTimeOriginal is 36867 decimal or 0x9003 hex
     
     date_and_time = PIL.Image.open(image)._getexif()[36867]
-    
-    # Splits it to separate date and time
-    date = date_and_time.split()[0]
-    time = date_and_time.split()[1]
 
-    # Reformats the date to use - instead of : 
-    for character in date:
-        if character == ':':
-            date = date.replace(character, '-')
-    # Combines the date and time to match the format pyinaturalist wants, 
-    date_time = str(date) + 'T' + str(time)
-    # returns a date and time formatted to submit to iNaturalist with
-    # pyinaturalist
-    return date_time
+    return datetime.strptime(date_and_time,'%Y:%m:%d %H:%M:%S')
+
+
+        # # Splits it to separate date and time
+        # date = date_and_time.split()[0]
+        # time = date_and_time.split()[1]
+        #
+        # # Reformats the date to use - instead of :
+        # for character in date:
+        #     if character == ':':
+        #         date = date.replace(character, '-')
+        # # Combines the date and time to match the format pyinaturalist wants,
+        # date_time = str(date) + 'T' + str(time)
+        # # returns a date and time formatted to submit to iNaturalist with
+        # # pyinaturalist
+        # return date_time
 
 
 # This presumes the name of the folder is the species name, taxon number or 

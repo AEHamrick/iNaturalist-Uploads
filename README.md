@@ -32,3 +32,17 @@ https://www.inaturalist.org/oauth/applications/new
 
 Before running the script first open this script, add your user name, password, app id, secret, and the time zone of the photos. 
 Then run the script. It should upload every jpg file in the folder as the file you select as a separate observation.
+
+
+
+# Docs
+
+### Packages
+[Pillow](https://pillow.readthedocs.io/en/3.0.x/index.html) (PIL fork)  
+[Pyinaturalist](https://github.com/inbo/pyinaturalist)   
+
+
+### Reference
+[iNaturalist API v1](https://api.inaturalist.org/v1/docs/)  
+[Exif tag catalog](https://www.exiv2.org/tags.html)
+
