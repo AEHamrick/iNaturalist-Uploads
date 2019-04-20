@@ -29,24 +29,22 @@ Base dir
 
 
 """
-# TODO: Move the above explanation out of docstring and into readme
 # TODO: Expand documentation and docstrings
 # TODO: oAuth/API access method
 # TODO: Logging
-# TODO: Consistent-ize use of pathlib.Path over string paths
-# TODO: Pick lat/long from Exif or GPX based on parameter or GUI checkbox
+# TODO: Consistent-ize use of pathlib.Path over string pathsx
 # TODO: Implement docopt and map out what things we want to be args and options
 # TODO: Figure out how to run from either GUI or command line
 # TODO: Processing rules
 # TODO: Keyfile process and contents
 # TODO: Consider multiple formats for taxon level folder names
 # TODO: Consolidate creation of and addition of photos to a new obs?
-# TODO: Global (api-wise) settings dict
 
 import os
 import pathlib
 from typing import List, Dict, Tuple
 from datetime import datetime
+
 
 #Project imports
 from import_functions import upload_folder_single, upload_folder_multiple, \
@@ -54,7 +52,8 @@ from import_functions import upload_folder_single, upload_folder_multiple, \
 from classes import Observation
 from import_gui import input_data
 from gpx import parse_gpx
-from obs_processing import process_rules
+from obs_processing import process_rules, assign_coordinates_to_obs
+import config
 
 
 def assemble_skeleton_observations(taxon_dirs: List[pathlib.Path]) -> List[Observation]:
@@ -92,6 +91,7 @@ def assemble_skeleton_observations(taxon_dirs: List[pathlib.Path]) -> List[Obser
                                       taxon_name=taxon_name,
                                       taxon_id=taxon_id)
 
+            current_obs.observed_on = min([get_date(x) for x in current_obs.photos])
             observations.append(current_obs)
             photos = []
 
@@ -104,6 +104,8 @@ def assemble_skeleton_observations(taxon_dirs: List[pathlib.Path]) -> List[Obser
                     current_obs = Observation(photos=photos,
                                               taxon_name=taxon_name,
                                               taxon_id=taxon_id)
+
+                    current_obs.observed_on = min([get_date(x) for x in current_obs.photos])
                     observations.append(current_obs)
 
     return observations
@@ -124,50 +126,6 @@ def accumulate_gps_points(gpx_dir: pathlib.Path) -> Dict[datetime, Tuple[str,str
     return gps_points
 
 
-def assign_coordinates_to_obs(observations,gps_points):
-    for obs in observations:
-        # Get and assign datestamp-- can't use the file attributes here because modification e.g., rotating, will
-        #  overwrite created, modified, and accessed timestamps. Have to go to EXIF for this then.
-
-        # TODO: Find the earliest date in the observations' photos to use for this to avoid issues with edited
-        #  photos having the wrong date
-        obs.observed_on = get_date(obs.photos[0])
-
-        obs.coordinates = gps_points[nearest_datetime(gps_points, obs.observed_on)]
-
-
-
-#Uploads all photos in folders contained in uploaded_folder
-for folder in directories:
-    subfolder = folder_name +'/' + folder + '/'
-#    print(subfolder)
-    upload_folder_single(subfolder, uploaded_folder, time_zone, accuracy,
-                         user, passw, app, secret)
-
-# Uploads photos in sub folders contained in species folders. These upload all
-# Photos as a single observation.
-
-
-for folder in directories:
-        subfolder = folder_name +'/' + folder + '/'
-        try: 
-            for root, dirs, files in os.walk(subfolder):
-                print('dirs' + dirs[0])
-                for directory in dirs:
-                    subsubfolder = subfolder + directory + '/'
-                    upload_folder_multiple(subfolder, subsubfolder,
-                                           uploaded_folder, time_zone, 
-                                           accuracy, user, passw, app, secret)
-        except:
-            pass
-
-
-
-        
-
-print("Program complete")
-
-
 if __name__ == '__main__':
     print("Running")
 
@@ -186,7 +144,7 @@ if __name__ == '__main__':
 
     coordinates = accumulate_gps_points(base_dir)
 
-    assign_coordinates_to_obs(observations,coordinates)
+    assign_coordinates_to_obs(observations,coordinates,config.flags['TRY_EXIF'])
 
     # At this point we could write out some kind of keyfile to which metadata could be added to, e.g., tags
     # or project IDs, and then re-ingested and associated with the observations before submission to the API.
