@@ -11,9 +11,7 @@ from datetime import datetime
 import PIL
 from PIL import ExifTags, Image
 
-from pyinaturalist.rest_api import create_observations
-from pyinaturalist.rest_api import get_access_token
-from pyinaturalist.rest_api import add_photo_to_observation
+
 
 from classes import Observation
 
@@ -209,9 +207,7 @@ def upload_folder_multiple(species_folder, folder, uploaded_folder,
         file_paths.append(file_path) # Makes a big list of paths
 
     # This is getting a token to allow photos to be uploaded.
-    token = get_access_token(username=user, password=passw,
-                             app_id=app,
-                             app_secret=secret)
+
     
     # This goes to every file, checks if it is a jpg, gets the gps coordinates,
     # get the time, and uploads it to iNaturalist.

@@ -40,22 +40,21 @@ Base dir
 # TODO: Processing rules
 # TODO: Keyfile process and contents
 # TODO: Consider multiple formats for taxon level folder names
+# TODO: Consolidate creation of and addition of photos to a new obs?
+# TODO: Global (api-wise) settings dict
 
-# os used to get a folder name
 import os
 import pathlib
 from typing import List, Dict, Tuple
-# This requires the file import_function.py to be in the same folder as this
-# script
+from datetime import datetime
+
+#Project imports
 from import_functions import upload_folder_single, upload_folder_multiple, \
                              has_donefile, nearest_datetime, get_date
 from classes import Observation
-# This requires the file import_gui.py to be in the same folder as this
-# script.
 from import_gui import input_data
 from gpx import parse_gpx
 from obs_processing import process_rules
-from datetime import datetime
 
 
 def assemble_skeleton_observations(taxon_dirs: List[pathlib.Path]) -> List[Observation]:
@@ -136,7 +135,8 @@ def assign_coordinates_to_obs(observations,gps_points):
 
         obs.coordinates = gps_points[nearest_datetime(gps_points, obs.observed_on)]
 
-    
+
+
 #Uploads all photos in folders contained in uploaded_folder
 for folder in directories:
     subfolder = folder_name +'/' + folder + '/'
