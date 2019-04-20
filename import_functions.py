@@ -48,7 +48,6 @@ def has_donefile(d: Union[str, pathlib.Path]) -> bool:
         return False
 
 
-
 # This function returns the latitude and longitude of a .jpg image
 def get_lat_long(image):
     # Gets all the exif data from the photo
@@ -111,43 +110,6 @@ def get_date(image: str) -> datetime:
     date_and_time = PIL.Image.open(image)._getexif()[36867]
 
     return datetime.strptime(date_and_time,'%Y:%m:%d %H:%M:%S')
-
-
-        # # Splits it to separate date and time
-        # date = date_and_time.split()[0]
-        # time = date_and_time.split()[1]
-        #
-        # # Reformats the date to use - instead of :
-        # for character in date:
-        #     if character == ':':
-        #         date = date.replace(character, '-')
-        # # Combines the date and time to match the format pyinaturalist wants,
-        # date_time = str(date) + 'T' + str(time)
-        # # returns a date and time formatted to submit to iNaturalist with
-        # # pyinaturalist
-        # return date_time
-
-
-# This presumes the name of the folder is the species name, taxon number or 
-# both. For example anything in 'Aphididae-52381' or 'Aphididae' or 'Aphids' 
-# or 52381 is uploaded as an aphid. If the name and taxon number conflict it
-# seems to take the taxon number as the correct value. 
-
-def get_taxon(folder):   
-    # This pulls out just the folder name
-    folder =os.path.split(os.path.dirname(folder))[-1]
-    species = ''
-    taxon = ''
-    for character in folder:
-        if not character.isdigit():
-            species = species + character
-    
-    for character in folder:
-        if character.isdigit():
-            taxon = taxon + character
-    
-
-    return [species, taxon]
 
 
 #Uploads all photos in a folder, each photo is an individual observation.

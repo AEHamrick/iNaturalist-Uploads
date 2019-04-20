@@ -9,6 +9,7 @@ based on time the photo was taken.
 
 import gpxpy
 import pathlib
+from pytz import timezone
 
 import os
 import sys
@@ -16,16 +17,28 @@ from typing import Union, List, Tuple, Dict
 from datetime import datetime, timedelta
 
 def parse_gpx(gpx_file: Union[pathlib.Path, str]) -> Dict[datetime, Tuple[str,str]]:
-	'''Get points and their corresponding times from the GPX file'''
+	'''
+	Get points and their corresponding timestamp from the GPX file. The timestamp is optional according to the spec
+	, but points without timestamps are useless for our purposes, so skip those points that lack it.
+
+	GPX files use ISO8601 for timestamp
+
+	:param gpx_file: gpx file to parse
+	:return: points that meet our criteria in the form of {timestamp : (lat, long)}
+
+	'''
 
 	points = {}
 	with open(gpx_file, 'r') as gfile:
 		gpx_tree = gpxpy.parse(gfile)
 
-		for track in gpx_tree.tracks:
-			for seg in track.segments:
-				for point in seg.points:
-					points[point.time] = (point.latitude,point.longitude)
-
+	for track in gpx_tree.tracks:
+		for seg in track.segments:
+			for point in seg.points:
+				if point.time == None:
+					continue
+				# Timestamp in the form of 2018-10-13T15:01:52Z
+				timestamp = datetime.strptime(point.time,'%Y-%m-%dT%H:%M:%S%z')
+				points[timestamp] = (point.latitude,point.longitude)
 
 	return points

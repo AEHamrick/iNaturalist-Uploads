@@ -40,9 +40,10 @@ Then run the script. It should upload every jpg file in the folder as the file y
 ### Packages
 [Pillow](https://pillow.readthedocs.io/en/3.0.x/index.html) (PIL fork)  
 [Pyinaturalist](https://github.com/inbo/pyinaturalist)   
-
+[pytz](https://pypi.org/project/pytz/)
 
 ### Reference
 [iNaturalist API v1](https://api.inaturalist.org/v1/docs/)  
-[Exif tag catalog](https://www.exiv2.org/tags.html)
+[Exif tag catalog](https://www.exiv2.org/tags.html)  
+[GPX file format](https://www.topografix.com/gpx.asp)
 

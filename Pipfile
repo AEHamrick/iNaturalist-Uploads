@@ -10,6 +10,7 @@ pyinaturalist = "*"
 pillow = "*"
 lxml = "*"
 gpxpy = "*"
+pytz = "*"
 
 [requires]
 python_version = "3.7"
