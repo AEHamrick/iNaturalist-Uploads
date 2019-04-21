@@ -32,7 +32,6 @@ Base dir
 # TODO: PySimpleGUI
 # TODO: Expand documentation and docstrings
 # TODO: Logging
-# TODO: Override keyring with credentials from GUI
 # TODO: Consistent-ize use of pathlib.Path over string pathsx
 # TODO: Implement docopt and map out what things we want to be args and options
 # TODO: Figure out how to run from either GUI or command line
@@ -61,8 +60,10 @@ if __name__ == '__main__':
     print("Running")
 
     # Pulls the data from the gui when the script is run.
-    [user, passw, app, secret,
+    [gui_creds,
      base_dir, time_zone, accuracy] = input_data()
+
+    config.Auth(gui_creds)
 
     print('Uploading all photos in folders contained in ' + base_dir)
 
