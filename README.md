@@ -33,6 +33,9 @@ https://www.inaturalist.org/oauth/applications/new
 Before running the script first open this script, add your user name, password, app id, secret, and the time zone of the photos. 
 Then run the script. It should upload every jpg file in the folder as the file you select as a separate observation.
 
+[You will need to make an app to be able to use this code](https://www.inaturalist.org/oauth/applications/new)
+
+[Accepted timezones](https://gist.github.com/mjrulesamrat/0c1f7de951d3c508fb3a20b4b0b33a98)
 
 
 # Docs
@@ -40,7 +43,10 @@ Then run the script. It should upload every jpg file in the folder as the file y
 ### Packages
 [Pillow](https://pillow.readthedocs.io/en/3.0.x/index.html) (PIL fork)  
 [Pyinaturalist](https://github.com/inbo/pyinaturalist)   
-[pytz](https://pypi.org/project/pytz/)
+[pytz](https://pypi.org/project/pytz/)  
+[keyring](https://keyring.readthedocs.io/en/latest/) ([Github](https://github.com/jaraco/keyring))  
+[Tkinter](https://wiki.python.org/moin/TkInter)  
+[PySimpleGUI](https://pysimplegui.readthedocs.io/)
 
 ### Reference
 [iNaturalist API v1](https://api.inaturalist.org/v1/docs/)  

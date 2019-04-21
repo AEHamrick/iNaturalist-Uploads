@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "af7344f4c785779c2c5a7d3994bae5c1b06a06329842e0ced64d9103e30c51be"
+            "sha256": "b5bd48db1e1aedb277a662ba3bce5fb7f33e510730b1ddf02e53652683c37ab4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,13 @@
             ],
             "version": "==3.0.4"
         },
+        "entrypoints": {
+            "hashes": [
+                "sha256:589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19",
+                "sha256:c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451"
+            ],
+            "version": "==0.3"
+        },
         "gpxpy": {
             "hashes": [
                 "sha256:b09e3212c9af83188d308214428c20c57b4ec1d45c3a3fc40f4b3d49c758aebf"
@@ -43,6 +50,14 @@
                 "sha256:ea8b7f6188e6fa117537c3df7da9fc686d485087abf6ac197f9c46432f7e4a3c"
             ],
             "version": "==2.8"
+        },
+        "keyring": {
+            "hashes": [
+                "sha256:44e5a4e1ad1070c7cd46959a0d6c2a99588b66a6dad6fd685463b486c04855ea",
+                "sha256:aae82841a2e170ecf4319df0f5c0df1468a98809e77563174949d8394bb59488"
+            ],
+            "index": "pypi",
+            "version": "==19.0.1"
         },
         "lxml": {
             "hashes": [
@@ -116,6 +131,14 @@
             "index": "pypi",
             "version": "==0.6.0"
         },
+        "pysimplegui": {
+            "hashes": [
+                "sha256:6853da835e63dcd2ca1340689b8fe80ca2ff19acdf4b37b647cdd09019598c8d",
+                "sha256:afd0d18610a54fa0aeab84ad58dfbcc7f10dbfc9fd32c4564ecbdb8f9d53e7e8"
+            ],
+            "index": "pypi",
+            "version": "==3.28.0"
+        },
         "pytz": {
             "hashes": [
                 "sha256:303879e36b721603cc54604edcac9d20401bdbe31e1e4fdee5b9f98d5d31dfda",
@@ -123,6 +146,14 @@
             ],
             "index": "pypi",
             "version": "==2019.1"
+        },
+        "pywin32-ctypes": {
+            "hashes": [
+                "sha256:24ffc3b341d457d48e8922352130cf2644024a4ff09762a2261fd34c36ee5942",
+                "sha256:9dc2d991b3479cc2df15930958b674a48a227d5361d413827a4cfd0b5876fc98"
+            ],
+            "markers": "sys_platform == 'win32'",
+            "version": "==0.2.0"
         },
         "requests": {
             "hashes": [

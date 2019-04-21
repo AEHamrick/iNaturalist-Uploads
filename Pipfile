@@ -11,6 +11,8 @@ pillow = "*"
 lxml = "*"
 gpxpy = "*"
 pytz = "*"
+keyring = "*"
+pysimplegui = "*"
 
 [requires]
 python_version = "3.7"
