@@ -1,135 +1,100 @@
-# -*- coding: utf-8 -*-
-"""
-This is where the input data such as Username and Password are stored. It calls
-up a graphical user interface to input the data. The main reason you would need
-to edit this is to set default values or to add an additional input.
-
-This file gets every needed input except for gps coordinates, date/time, and 
-species name. 
-"""
-
-
 import sys
-import tkinter as tk
-from tkinter import Tk, Frame, Entry, TOP, X, Button, Label
+if sys.version_info[0] >= 3:
+    import PySimpleGUI as sg
+else:
+    import PySimpleGUI27 as sg
 
-from config import vals
+#TODO: tooltips
+tooltips = {}
 
-def input_data():
-    # The fields which are collected by the gui. This is what is displayed next
-    # to the entry box.
-    fields = ['Username', 'Password', 'APP ID', 'APP Secret', 'Folder', 
-              'Time Zone', 'Accuracy of Position  (m)']
-    
-    # Here is where the preset values are set. These should be edited to match
-    # the photos being imported. 
-    
-    # Your user name and password on the iNaturalist website. 
-    Username = ''
-    Password = ''
-    
+#region: options frame
+options_layout = \
+    [[sg.Text('Geotagging method'),sg.Radio('GPX', "geotag", key = 'geotag_gpx', default=True), sg.Radio('EXIF', "geotag", key='geotag_exif')],
+     [sg.Text('Geotagging privacy'),sg.InputCombo(['Public','Obscured','Private'], default_value='Obscured', key='geotag_privacy', tooltip=None)],
+     [sg.Checkbox('Use keyfile', key = 'keyfile', disabled=True),sg.Checkbox('Geotag fallback', key = 'geotag_fallback', disabled=True)],
+     #TODO: Make sure to note in the tooltips some sensible comparisons for these values
+     [sg.Text('Geotagging accuracy'),sg.InputCombo([5,10,50,100,500], default_value='Obscured', key='geotag_privacy', tooltip=None)],
+    ]
 
-    app = ''
-    secret = ''
-    
-    # Every photo contained in subfolders in this folder will be uploaded. The
-    # species will be the name of the folder the photo was placed in. 
-    folder_name = ''
-    
-    # It appears all the time zones here are accepted:
-    #
-    default_text = [Username, Password, app, secret, folder_name,
-                    vals['timezone'], vals['accuracy']]
-    
-    # Had to use a class here rather than a function to get data out of this
-    # and back to the main script.
-    class GetEntry():
-        def __init__(self, master, fields, default_text):
-            self.master=master
-            self.entry_contents=None
-            self.entries = []        
-            
-            # the different entry boxes are labeled e1, e2, e3... They are 
-            # defined here
-            self.e1 = tk.Entry(master, width = 75)
-            self.entries.append(self.e1)
-            Label(master, text=fields[0]).grid(row=0)
-            self.e1.insert(0, default_text[0])
-            self.e1.grid(row=0, column=1)
-            self.e1.focus_set()
-                
-            self.e2 = tk.Entry(master, width = 75)
-            self.entries.append(self.e2)
-            Label(master, text=fields[1]).grid(row=1)
-            self.e2.insert(0, default_text[1])
-            self.e2.grid(row=1, column=1)
-            self.e2.focus_set()    
-    
-            self.e3 = tk.Entry(master, width = 75)
-            self.entries.append(self.e3)
-            Label(master, text=fields[2]).grid(row=2)
-            self.e3.insert(0, default_text[2])
-            self.e3.grid(row=2, column=1)
-            self.e3.focus_set() 
-            
-            self.e4 = tk.Entry(master, width = 75)
-            self.entries.append(self.e4)
-            Label(master, text=fields[3]).grid(row=3)
-            self.e4.insert(0, default_text[3])
-            self.e4.grid(row=3, column=1)
-            self.e4.focus_set() 
-            
-            self.e5 = tk.Entry(master, width = 75)
-            self.entries.append(self.e5)
-            Label(master, text=fields[4]).grid(row=4)
-            self.e5.insert(0, default_text[4])
-            self.e5.grid(row=4, column=1)
-            self.e5.focus_set() 
-            
-            self.e6 = tk.Entry(master, width = 75)
-            self.entries.append(self.e6)
-            Label(master, text=fields[5]).grid(row=5)
-            self.e6.insert(0, default_text[5])
-            self.e6.grid(row=5, column=1)
-            self.e6.focus_set() 
-            
-            self.e7 = tk.Entry(master, width = 75)
-            self.entries.append(self.e7)
-            Label(master, text=fields[6]).grid(row=6)
-            self.e7.insert(0, default_text[6])
-            self.e7.grid(row=6, column=1)
-            self.e7.focus_set()
-            
-            # The upload button is defined here
-            tk.Button(master, text="Upload", width=10, bg="yellow",
-                   command=self.callback).grid(row=10, column=0)
-    
-                # This function pulls what is typed out of the entry boxes when
-            # the button is pushed. 
-        def callback(self):
-            self.entry_contents = []
-            self.entry_contents.append(self.e1.get())
-            self.entry_contents.append(self.e2.get())
-            self.entry_contents.append(self.e3.get())
-            self.entry_contents.append(self.e4.get())
-            self.entry_contents.append(self.e5.get())
-            self.entry_contents.append(self.e6.get())
-            self.entry_contents.append(self.e7.get())
-            
-            # This closes the window after the data has been obtained
-            self.master.destroy()
-    
-    
-    master = tk.Tk()
-    
-    # This calls up the box with the inputs
-    GE=GetEntry(master, fields, default_text)
-    
-    tk.Button(master, text="Quit", width=10, bg="yellow",
-           command=master.destroy).grid(row=10, column=1)
-    
-    master.mainloop()
-    
-    # This extracts the text out of those boxes and returns it. 
-    text_entered = GE.entry_contents
-    return text_entered
+options = sg.Frame('Options',
+                   options_layout,
+                   title_color=None,
+                   background_color=None,
+                   title_location=None,
+                   relief=sg.DEFAULT_FRAME_RELIEF,
+                   size=(None, None),
+                   font=None,
+                   pad=None,
+                   border_width=None,
+                   key=None,
+                   tooltip=None,
+                   right_click_menu=None,
+                   visible=True)
+
+
+#endregion
+#region: file nav frame
+
+file_layout = \
+    [[sg.Text('Working folder'),sg.In('',key='path_working'), sg.FolderBrowse(target='path_working',
+                                                                             initial_folder='%UserProfile%\desktop')],
+     [sg.Text('Keyfile'), sg.In('', key='path_key',disabled=True), sg.FolderBrowse(target='path_key', disabled=True,
+                                                                               initial_folder='%UserProfile%\desktop')],
+     [sg.Text('Global meta file'), sg.In('', key='path_meta',disabled=True), sg.FolderBrowse(target='path_meta', disabled=True,
+                                                                               initial_folder='%UserProfile%\desktop')]
+    ]
+
+file = sg.Frame('Files',
+                file_layout,
+                title_color=None,
+                background_color=None,
+                title_location=None,
+                relief=sg.DEFAULT_FRAME_RELIEF,
+                size=(None, None),
+                font=None,
+                pad=None,
+                border_width=None,
+                key=None,
+                tooltip=None,
+                right_click_menu=None,
+                visible=True)
+#endregion
+
+#region: progress bars frame
+#TODO: Leave this til later
+progress_layout = []
+
+progress = sg.Frame('Progress',
+                    progress_layout,
+                    title_color=None,
+                    background_color=None,
+                    title_location=None,
+                    relief=sg.DEFAULT_FRAME_RELIEF,
+                    size=(None, None),
+                    font=None,
+                    pad=None,
+                    border_width=None,
+                    key=None,
+                    tooltip=None,
+                    right_click_menu=None,
+                    visible=True)
+#endregion
+
+
+
+
+layout = [[options, file],
+          [sg.Ok(),sg.Cancel()]]
+
+window = sg.Window('Window Title', layout)
+
+while True:                 # Event Loop
+  event, values = window.Read()
+  print(event, values)
+  if event is None or event == 'Exit':
+      break
+  if event == 'Show':
+      # change the "output" element to be the value of "input" element
+      window.Element('_OUTPUT_').Update(values['_IN_'])
+
+window.Close()
