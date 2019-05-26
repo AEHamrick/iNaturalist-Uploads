@@ -4,8 +4,37 @@ if sys.version_info[0] >= 3:
 else:
     import PySimpleGUI27 as sg
 
+from creds import iNat
+
 #TODO: tooltips
+#TODO: Even out spacing
 tooltips = {}
+
+#region: config frame
+#TODO: Store some defaults somewhere and pull in here
+config_layout = \
+    [[sg.Text('User'),sg.In(default_text=iNat.USER.value,key='api_user')],
+     [sg.Text('Pass'),sg.In(default_text=iNat.PWD.value,key='api_pass',password_char='*')],
+     [sg.Text('API key'),sg.In(default_text=iNat.APP_ID.value,key='api_key',size=(65, None))],
+     [sg.Text('API secret'), sg.In(default_text=iNat.SECRET.value, key='api_secret',size=(65, None))]
+    ]
+
+config = sg.Frame('Config',
+                   config_layout,
+                   title_color=None,
+                   background_color=None,
+                   title_location=None,
+                   relief=sg.DEFAULT_FRAME_RELIEF,
+                   size=(None, None),
+                   font=None,
+                   pad=None,
+                   border_width=None,
+                   key=None,
+                   tooltip=None,
+                   right_click_menu=None,
+                   visible=True)
+#endregion
+
 
 #region: options frame
 options_layout = \
@@ -13,7 +42,7 @@ options_layout = \
      [sg.Text('Geotagging privacy'),sg.InputCombo(['Public','Obscured','Private'], default_value='Obscured', key='geotag_privacy', tooltip=None)],
      [sg.Checkbox('Use keyfile', key = 'keyfile', disabled=True),sg.Checkbox('Geotag fallback', key = 'geotag_fallback', disabled=True)],
      #TODO: Make sure to note in the tooltips some sensible comparisons for these values
-     [sg.Text('Geotagging accuracy'),sg.InputCombo([5,10,50,100,500], default_value='Obscured', key='geotag_privacy', tooltip=None)],
+     [sg.Text('Geotagging accuracy'),sg.InputCombo([5,10,50,100,500], default_value=50, key='geotag_acc', tooltip=None)],
     ]
 
 options = sg.Frame('Options',
@@ -80,21 +109,23 @@ progress = sg.Frame('Progress',
                     visible=True)
 #endregion
 
+layout = [[config],
+          [options, file],
+          [sg.Submit('Begin processing')],
+          [sg.Exit()]]
 
-
-
-layout = [[options, file],
-          [sg.Ok(),sg.Cancel()]]
-
-window = sg.Window('Window Title', layout)
+window = sg.Window('iNaturalist bulk upload', layout)
 
 while True:                 # Event Loop
-  event, values = window.Read()
-  print(event, values)
-  if event is None or event == 'Exit':
-      break
-  if event == 'Show':
-      # change the "output" element to be the value of "input" element
-      window.Element('_OUTPUT_').Update(values['_IN_'])
+    event, values = window.Read()
+    print(event, values)
+    if event is None or event == 'Exit':
+        break
+    if event == 'Show':
+        # change the "output" element to be the value of "input" element
+        window.Element('_OUTPUT_').Update(values['_IN_'])
+    if event == 'Begin processing':
+        pass
+
 
 window.Close()

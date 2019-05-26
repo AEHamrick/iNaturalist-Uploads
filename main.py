@@ -39,6 +39,7 @@ Base dir
 # TODO: Keyfile process and contents
 # TODO: Consider multiple formats for taxon level folder names
 # TODO: Consolidate creation of and addition of photos to a new obs?
+# TODO: Credential storage
 
 import os
 import pathlib
@@ -49,7 +50,7 @@ from datetime import datetime
 #Project imports
 from utility import has_donefile, get_created_date
 from classes import Observation
-from gui import input_data
+#from gui import input_data
 from gpx import parse_gpx, accumulate_gps_points
 from obs_processing import process_rules, assign_coordinates_to_obs, assemble_skeleton_observations
 from api_interactions import upload_obs
