@@ -4,18 +4,20 @@ if sys.version_info[0] >= 3:
 else:
     import PySimpleGUI27 as sg
 
+#TODO: Oops, having this in gitignore is more secure but hampers working on multiple devices; sort that
 from creds import iNat
-
+from config import Auth, set_flags, flags
 #TODO: tooltips
 #TODO: Even out spacing
 tooltips = {}
 
 #region: config frame
-#TODO: Store some defaults somewhere and pull in here
+#TODO: Disable inputs besides user when use system keyring is selected
 config_layout = \
-    [[sg.Text('User'),sg.In(default_text=iNat.USER.value,key='api_user')],
+    [sg.Checkbox('Use system keyring', key = 'USE_SECURE_KEYRING', enable_events=True)
+        [sg.Text('User'),sg.In(default_text=iNat.USER.value,key='api_user')],
      [sg.Text('Pass'),sg.In(default_text=iNat.PWD.value,key='api_pass',password_char='*')],
-     [sg.Text('API key'),sg.In(default_text=iNat.APP_ID.value,key='api_key',size=(65, None))],
+     [sg.Text('App id'),sg.In(default_text=iNat.APP_ID.value,key='api_id',size=(65, None))],
      [sg.Text('API secret'), sg.In(default_text=iNat.SECRET.value, key='api_secret',size=(65, None))]
     ]
 
@@ -126,6 +128,15 @@ while True:                 # Event Loop
         window.Element('_OUTPUT_').Update(values['_IN_'])
     if event == 'Begin processing':
         pass
+        # Start the good stuff
+        # Set flags
+        set_flags(values) #Might be a wash but this allows us to avoid passing the entire state of the gui around
+
+        #Set up auth object
+        Auth(user       = values['api_user'],
+             pwd        = values['api_pass'],
+             app_id     = values['api_id'],
+             app_secret = values['api_secret'])
 
 
 window.Close()

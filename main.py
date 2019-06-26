@@ -29,10 +29,9 @@ Base dir
 
 
 """
-# TODO: PySimpleGUI
 # TODO: Expand documentation and docstrings
 # TODO: Logging
-# TODO: Consistent-ize use of pathlib.Path over string pathsx
+# TODO: Consistent-ize use of pathlib.Path over string paths
 # TODO: Implement docopt and map out what things we want to be args and options
 # TODO: Figure out how to run from either GUI or command line
 # TODO: Processing rules
@@ -40,6 +39,8 @@ Base dir
 # TODO: Consider multiple formats for taxon level folder names
 # TODO: Consolidate creation of and addition of photos to a new obs?
 # TODO: Credential storage
+# TODO: Restructure config.auth to match what the GUI is providing
+# TODO: Getters and setters for Auth method
 
 import os
 import pathlib
