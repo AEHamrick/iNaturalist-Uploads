@@ -1,4 +1,5 @@
-import pathlib
+from pathlib import Path
+import os
 from typing import Dict, Any, List
 from classes import Observation
 
@@ -13,10 +14,10 @@ Business-rule type observation processing
 
 projects = {}
 
-def assemble_skeleton_observations(taxon_dirs: List[pathlib.Path]) -> List[Observation]:
+def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
     '''
-    At its barest an observation is 1 or more photos, a taxon ID, and a taxon name; this method assembles these bare
-    observations from the provided folder hierarchy and returns them for further processing.
+    At its barest an observation is 1 or more photos, a taxon ID, and a taxon name, and some global values such as geotag accuracy and privacy;
+    this method assembles these bare observations from the provided folder hierarchy and returns them for further processing.
 
     Each taxon_dir should be named in the form '{0}-{1}'.format(taxon id, taxon name) and should contain some
     combination of:
@@ -25,6 +26,11 @@ def assemble_skeleton_observations(taxon_dirs: List[pathlib.Path]) -> List[Obser
     :return: 'skeleton' observations created from photos found
     '''
     observations: List[Observation] = []
+    taxon_dirs = []
+    for root, dirs, files in os.walk(str(working_dir)):
+        for d in dirs:
+            taxon_dirs.append(Path(root) / d)
+    
     # Traverse folders
     for taxon_dir in taxon_dirs:
 
@@ -37,7 +43,7 @@ def assemble_skeleton_observations(taxon_dirs: List[pathlib.Path]) -> List[Obser
             # Each subdir of a taxon level dir will be 1 observation
             if item.is_dir():
                 obs_dirs.append(item)
-            # Requirement for use is no other files pesent besides observation images, so this is
+            # Requirement for use is no other files present besides observation images, so this is
             #  fine for now with no filename filtering
             if item.is_file():
                 photos.append(item.name)
