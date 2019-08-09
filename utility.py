@@ -7,7 +7,7 @@ from typing import Union, List, Dict, Tuple
 import pathlib
 import shutil
 import os
-from datetime import datetime
+from pendulum import DateTime
 import PIL
 from PIL import ExifTags, Image
 
@@ -16,7 +16,7 @@ from PIL import ExifTags, Image
 from classes import Observation
 
 
-def nearest_datetime(items: List[datetime], target: datetime):
+def nearest_datetime(items: List[DateTime], target: DateTime):
     '''
 
     :param items:  Datetimes to search through
@@ -100,11 +100,11 @@ def get_lat_long(image):
 
 
 # Pulls the date information from 
-def get_created_date(image: str) -> datetime:
+def get_created_date(image: str) -> DateTime:
 
     # Pulls the date and time from the exif format;
     # Exif.Image.DateTimeOriginal is 36867 decimal or 0x9003 hex
     
     date_and_time = PIL.Image.open(image)._getexif()[36867]
 
-    return datetime.strptime(date_and_time,'%Y:%m:%d %H:%M:%S')
+    return DateTime.strptime(date_and_time,'%Y:%m:%d %H:%M:%S')

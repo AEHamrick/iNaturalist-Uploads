@@ -50,10 +50,10 @@ class Auth:
 
     token = ''
 
-    def __init__(self, user: Optional[str],
-                       pwd: Optional[str],
-                       app_id: Optional[str],
-                       app_secret: Optional[str]):
+    def __init__(self, user: str,
+                       pwd: Optional[str] = None,
+                       app_id: Optional[str] = None ,
+                       app_secret: Optional[str] = None):
         if flags['USE_SECURE_KEYRING']:
             #Think it would be best to require user at the GUI, that way the keyring setup could be per user
             #by inserting it into the keyring fields as below

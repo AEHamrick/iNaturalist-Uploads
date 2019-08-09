@@ -10,13 +10,13 @@ based on time the photo was taken.
 import gpxpy
 import pathlib
 from pytz import timezone
-
+from pendulum import DateTime, Period, Duration
 import os
 import sys
 from typing import Union, List, Tuple, Dict
-from datetime import datetime, timedelta
+#from datetime import datetime, timedelta
 
-def parse_gpx(gpx_file: Union[pathlib.Path, str]) -> Dict[datetime, Tuple[str,str]]:
+def parse_gpx(gpx_file: Union[pathlib.Path,str]) -> Dict[DateTime, Tuple[str,str]]:
     '''
     Get points and their corresponding timestamp from the GPX file. The timestamp is optional according to the spec
     , but points without timestamps are useless for our purposes, so skip those points that lack it.
@@ -29,6 +29,7 @@ def parse_gpx(gpx_file: Union[pathlib.Path, str]) -> Dict[datetime, Tuple[str,st
     '''
 
     points = {}
+
     with open(gpx_file, 'r') as gfile:
         gpx_tree = gpxpy.parse(gfile)
 
@@ -38,13 +39,13 @@ def parse_gpx(gpx_file: Union[pathlib.Path, str]) -> Dict[datetime, Tuple[str,st
                 if point.time == None:
                     continue
                 # Timestamp in the form of 2018-10-13T15:01:52Z
-                timestamp = datetime.strptime(point.time,'%Y-%m-%dT%H:%M:%S%z')
+                timestamp = DateTime.strptime(point.time,'%Y-%m-%dT%H:%M:%S%z')
                 points[timestamp] = (point.latitude,point.longitude)
 
     return points
 
 
-def accumulate_gps_points(gpx_dir: pathlib.Path) -> Dict[datetime, Tuple[str,str]]:
+def accumulate_gps_points(gpx_dir: pathlib.Path) -> Dict[DateTime, Tuple[str,str]]:
     '''
     Iterate over the provided GPX files and assemble points with their timestamps
 

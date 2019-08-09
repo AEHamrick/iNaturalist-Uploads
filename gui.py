@@ -6,20 +6,24 @@ else:
 
 #TODO: Oops, having this in gitignore is more secure but hampers working on multiple devices; sort that
 from creds import iNat
+from config import Auth
 from obs_processing import *
+from api_interactions import upload_obs
 
 #TODO: tooltips
 #TODO: Even out spacing
+# TODO: Flags method
 tooltips = {}
 
 #region: config frame
-#TODO: Disable inputs besides user when use system keyring is selected
+# TODO: Get the credentials to update when user is changed
+# TODO: Get rid of hardcoded creds
 config_layout = \
-    [sg.Checkbox('Use system keyring', key = 'USE_SECURE_KEYRING', enable_events=True)
-        [sg.Text('User'),sg.In(default_text=iNat.USER.value,key='api_user')],
-     [sg.Text('Pass'),sg.In(default_text=iNat.PWD.value,key='api_pass',password_char='*')],
-     [sg.Text('App id'),sg.In(default_text=iNat.APP_ID.value,key='api_id',size=(65, None))],
-     [sg.Text('API secret'), sg.In(default_text=iNat.SECRET.value, key='api_secret',size=(65, None))]
+    [[sg.Checkbox('Use system keyring', key = 'USE_SECURE_KEYRING', default=True, enable_events=True)],
+     [sg.Text('User'),sg.In(default_text=iNat.USER.value,key='api_user')],
+     [sg.Text('Pass'),sg.In(default_text=iNat.PWD.value,key='api_pass',password_char='*',disabled=True)],
+     [sg.Text('App id'),sg.In(default_text=iNat.APP_ID.value,key='api_id',size=(65, None),disabled=True)],
+     [sg.Text('API secret'), sg.In(default_text=iNat.SECRET.value, key='api_secret',size=(65, None),disabled=True)]
     ]
 
 config = sg.Frame('Config',
@@ -41,10 +45,12 @@ config = sg.Frame('Config',
 
 #region: options frame
 options_layout = \
-    [[sg.Text('Geotagging primary'),sg.Radio('GPX', "geotag", key = 'geotag_gpx', default=True), sg.Radio('EXIF', "geotag", key='geotag_exif')],
-     [sg.Checkbox('Geotag fallback', key = 'geotag_fallback_flag', default=False,enable_events=True)],
-     [sg.Text('Geotagging fallback'),sg.Radio('Try other source', "geotag_fallback", key = 'geotag_other_one', disabled=True),
-                                     sg.Radio('None', "geotag_fallback", key='geotag_none', default=True, disabled=True)],
+    [[sg.Text('Geotagging primary'),sg.Radio('GPX', "geotag", key = 'geotag_primary_gpx', default=True),
+                                    sg.Radio('EXIF', "geotag", key='geotag_primary_exif'),
+                                    sg.Radio('Manual (not recommended for large batches)', "geotag", key='geotag_primary_manual')],
+     
+     [sg.Checkbox('Geotag fallback (try other source)', key = 'geotag_fallback_flag', default=False,enable_events=True)],
+     
      [sg.Text('Geotagging privacy'),sg.InputCombo(['Public','Obscured','Private'], default_value='Obscured', key='geotag_privacy', tooltip=None)],
      [sg.Checkbox('Use keyfile', key = 'keyfile', disabled=True)],
      #TODO: Make sure to note in the tooltips some sensible comparisons for these values
@@ -130,27 +136,44 @@ while True:                 # Event Loop
     if event == 'Show':
         # change the "output" element to be the value of "input" element
         window.Element('_OUTPUT_').Update(values['_IN_'])
-    if event == 'geotag_fallback_flag':
-        #enable/disable the fallback dialog appropriately
-        window.Element('geotag_other_one').Update(disabled= not values['geotag_fallback_flag'])
-        window.Element('geotag_none').Update(disabled= not values['geotag_fallback_flag'])
-        pass
+    
+    if event == 'USE_SECURE_KEYRING':
+        window.Element('api_pass').Update(disabled=  values['USE_SECURE_KEYRING'])
+        window.Element('api_id').Update(disabled=  values['USE_SECURE_KEYRING'])
+        window.Element('api_secret').Update(disabled=  values['USE_SECURE_KEYRING'])
+        
     if event == 'Begin processing':
-        pass
     
+        auth = Auth(values['api_user'])
+        
         #Assemble observations from working folder with taxon, file(s), date, global values
-        obs = assemble_skeleton_observations(values['path_working'])
+        obs = assemble_skeleton_observations(Path(values['path_working']))
         #Run primary geotagging
+        if not values['geotag_primary_manual']:
+            assign_coordinates_to_obs(obs,'{0}{1}'.format('GPX' if values['geotag_primary_gpx'] else '', # TODO: This is kind of hacky?
+                                                          'EXIF' if values['geotag_primary_exif'] else ''),
+                                  values)
+            #Run secondary geotagging if applicable
+            if values['geotag_fallback_flag']:
+                assign_coordinates_to_obs(obs, '{0}{1}'.format('GPX' if not values['geotag_primary_gpx'] else '',
+                                                               'EXIF' if not values['geotag_primary_exif'] else ''),
+                                      values)
     
-        #Run secondary geotagging if selected
+        # TODO: Apply processing rules if indicated
+        #process_rules(obs)
+        # TODO: Apply project membership rules if indicated
+        #process_project_rules(obs)
     
         # TODO: Generate skeleton keyfile
-        
         # TODO: Consume completed keyfile
-    
-        #Establish API connection
-    
+        
         #Transmit observations
+        for o in obs:
+            upload_obs(o)
+        
+        #Create .done files
+        for o in [x for x in obs if x.inat_result == 'ok']:
+            (o.path / '.done').touch()
 
 
 window.Close()
