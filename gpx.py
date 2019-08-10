@@ -1,10 +1,10 @@
 '''
-
 Helper methods to work with a GPX file in companion to the upload photo set to facilitate adding lat/long coordinates.
 
 Modern security concerns mean that many choose not to embed GPS data in photos taken with a smartphone; too, many DSLRs
-simply lack this facility. The idea here is to use a GPX file recorded during a field session to estimate coordinates
-based on time the photo was taken.
+simply lack this facility. With that in mind, with either a smartphone or a dedicated GPS device, a GPX file
+can be recorded during a field session and from the set of points and timestamps it contains, we can estimate
+coordinates a photo was taken based on timestamp.
 '''
 
 import gpxpy
@@ -14,12 +14,14 @@ from pendulum import DateTime, Period, Duration
 import os
 import sys
 from typing import Union, List, Tuple, Dict
-#from datetime import datetime, timedelta
+from logging import getLogger
+
+logger = getLogger()
 
 def parse_gpx(gpx_file: Union[pathlib.Path,str]) -> Dict[DateTime, Tuple[str,str]]:
     '''
-    Get points and their corresponding timestamp from the GPX file. The timestamp is optional according to the spec
-    , but points without timestamps are useless for our purposes, so skip those points that lack it.
+    Get points and their corresponding timestamp from the GPX file. The timestamp is optional according to the spec,
+    but points without timestamps are useless for our purposes, so skip those points that lack it.
 
     GPX files use ISO8601 for timestamp
 
@@ -29,10 +31,12 @@ def parse_gpx(gpx_file: Union[pathlib.Path,str]) -> Dict[DateTime, Tuple[str,str
     '''
 
     points = {}
-
+    logger.debug('parse_gpx()')
     with open(gpx_file, 'r') as gfile:
+        logger.info('Parsing {0}'.format(gpx_file))
         gpx_tree = gpxpy.parse(gfile)
 
+    logger.debug('Accumulating gps points')
     for track in gpx_tree.tracks:
         for seg in track.segments:
             for point in seg.points:
@@ -41,7 +45,9 @@ def parse_gpx(gpx_file: Union[pathlib.Path,str]) -> Dict[DateTime, Tuple[str,str
                 # Timestamp in the form of 2018-10-13T15:01:52Z
                 timestamp = DateTime.strptime(point.time,'%Y-%m-%dT%H:%M:%S%z')
                 points[timestamp] = (point.latitude,point.longitude)
-
+    
+    logger.info('Found {0} gps points with timestamp'.format(str(len(points))))
+    
     return points
 
 
@@ -53,8 +59,12 @@ def accumulate_gps_points(gpx_dir: pathlib.Path) -> Dict[DateTime, Tuple[str,str
     :return:
     '''
     gps_points = {}
-
+    
+    logger.debug('accumulate_gps_points()')
+    
     for gpx in pathlib.Path(gpx_dir).glob('*.gpx'):
         gps_points.update(parse_gpx(gpx))
 
+    logger.info('Found {0} gps points total'.format(str(len(gps_points))))
+    
     return gps_points

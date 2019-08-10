@@ -1,15 +1,16 @@
 
 from pyinaturalist.rest_api import create_observations
-
 from pyinaturalist.rest_api import add_photo_to_observation
-
 from classes import Observation
-import config
+from logging import getLogger
 from requests import HTTPError
+
+logger = getLogger()
 
 
 def upload_obs(obs: Observation, token:str):
-
+    
+    logger.debug('upload_obs()')
 
     params = {'observation':
                   {'taxon_id'                           : obs.taxon_id,
@@ -27,6 +28,7 @@ def upload_obs(obs: Observation, token:str):
                    }, }
 
     try:
+        logger.info('Uploading observation for taxon {0}'.format(obs.taxon_id))
         r = create_observations(params=params, access_token=token)
     
         obs.inat_id = r[0]['id']
@@ -39,12 +41,18 @@ def upload_obs(obs: Observation, token:str):
 
     except HTTPError as ex:
         obs.inat_result = 'Error creating observation: {0}'.format(ex)
-        
+        logger.error('Bad result from iNaturalist API, skipping this one')
+        logger.exception(ex)
+    
     except Exception as ex:
         raise
-    
     else:
+        logger.info('Success')
         obs.inat_result = 'ok'
     
     
-        
+
+def get_taxon_id(name:str) -> str:
+    
+    #TODO: Need to be able to get a taxon ID from the API or from the web interface to simplify setting up the upload folders
+    pass

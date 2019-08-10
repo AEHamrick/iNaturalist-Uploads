@@ -6,12 +6,16 @@ from config import geotag_methods, flags
 from gpx import accumulate_gps_points
 from PIL import Image
 from utility import get_created_date, get_lat_long, nearest_datetime, has_donefile
-import config
-'''
-Business-rule type observation processing
 
+from logging import getLogger
+
+logger = getLogger()
 
 '''
+Assembly of observations from rudimentary data, "business-rule" type observation processing against criteria
+'''
+
+#TODO: toml or similar for observation rules
 
 projects = {}
 
@@ -29,10 +33,17 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
     observations: List[Observation] = []
     taxon_dirs = []
     
+    logger.debug('assemble_skeleton_observations()')
+    
+    logger.info('Found these top level taxon dirs in {0}'.format(working_dir))
     for d in [x for x in working_dir.iterdir() if x.is_dir()]:
         taxon_dirs.append(working_dir / d)
+        logger.info('{0}'.format(d))
+        
     
     # Traverse folders
+    
+    logger.info('Traversing taxon dirs')
     for taxon_dir in taxon_dirs:
 
         # Elements are always in this order when copied from the iNat URL
@@ -50,8 +61,11 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
             if item.is_file():
                 photos.append(Path(taxon_dir) / item.name)
 
-        # If any files exist in the taxon folder itself, create an observation with them as long as no .done file exists
-        if len(photos) > 0 and not has_donefile(taxon_dir):
+            logger.info('{0} photos total'.format(str(len(photos))))
+            
+        # If any files exist in the taxon folder itself, create an observation with them as long as no .done file exists unless ignore donefiles is enabled
+        if len(photos) > 0 and not (has_donefile(taxon_dir) or flags['IGNORE_DONEFILES']):
+            logger.info('Creating observation for top level taxon dir')
             current_obs = Observation(photos=photos,
                                       taxon_name=taxon_name,
                                       taxon_id=taxon_id)
@@ -61,20 +75,26 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
             observations.append(current_obs)
             photos = []
 
-        # Iterate through the observation folders, if any; skip a folder if a .done file exists
+        # Iterate through the observation folders, if any; skip a folder if a .done file exists unless ignore donefiles is enabled
         if len(obs_dirs) > 0:
-            for obs_dir in [x for x in obs_dirs if not has_donefile(x)]:
-                
+            # TODO: Test ignore donefiles & add to GUI when working
+            for obs_dir in [x for x in obs_dirs if not (has_donefile(x) or flags['IGNORE_DONEFILES'])]:
+                logger.info('Creating observation')
                 photos = [Path(obs_dir) / x.name for x in obs_dir.iterdir() if x.is_file()]
+                logger.info('{0} photos total'.format(str(len(photos))))
                 
                 current_obs = Observation(photos=photos,
                                           taxon_name=taxon_name,
                                           taxon_id=taxon_id)
 
+                # Obs photos /should/ all be taken relatively close together, should be fine to take the earliest date of
+                #  the set.
+            
                 current_obs.observed_on = min([get_created_date(x) for x in current_obs.photos])
                 current_obs.tzone = current_obs.observed_on.timezone_name
                 observations.append(current_obs)
-
+    logger.info('{0} observations total'.format(str(len(observations))))
+    
     return observations
 
 def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str, working_path:Path):
@@ -86,29 +106,29 @@ def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str
     :return:
     '''
 
+    logger.debug('assign_coordinates_to_obs')
     
     if geotag_method == geotag_methods.manual:
-        raise ValueError('Manual geotagging selection somehow got into the assign coordinates logic')
+        raise ValueError('Shouldn\'t be in assign_coordinates_to_obs() if manual geotagging is selected')
         
     #Iterate over observations, never reprocess one that already has coordinates
-    for obs in [x for x in observations if x.coordinates != [None,None]]:
-        # Get and assign datestamp-- can't use the file attributes here because modification e.g., rotating, will
-        #  overwrite created, modified, and accessed timestamps. Have to go to EXIF for this then.
 
-        coordinates = [None, None]
-
-        if geotag_method == 'EXIF':
+    if geotag_method == 'EXIF':
+        for obs in [x for x in observations if not x.coordinates]:
+            logger.info('Using EXIF')
             with Image.open(obs.photos[0]) as img:
-                coordinates = get_lat_long(img)
+                obs.coordinates = get_lat_long(img)
+            obs.geotag_accuracy = flags['GEOTAG_ACCURACY']
 
 
-        if geotag_method == 'GPX':
-            gps_points = accumulate_gps_points(working_path / 'gpx')
+    if geotag_method == 'GPX':
+        gps_points = accumulate_gps_points(working_path / 'gpx')
+        logger.info('Using GPX')
+        
+        for obs in [x for x in observations if not x.coordinates]:
             
-            coordinates = gps_points[nearest_datetime(list(gps_points.keys()), obs.observed_on)]
-
-        obs.coordinates = coordinates
-        obs.geotag_accuracy = flags['GEOTAG_ACCURACY']
+            obs.coordinates = gps_points[nearest_datetime(list(gps_points.keys()), obs.observed_on)]
+            obs.geotag_accuracy = flags['GEOTAG_ACCURACY']
 
 
 def process_rules(observations: List[Observation], flags: Dict[str,bool]):

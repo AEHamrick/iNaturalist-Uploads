@@ -4,13 +4,15 @@ if sys.version_info[0] >= 3:
 else:
     import PySimpleGUI27 as sg
 
-from config import Auth, set_flags, flags, geotag_methods
+from config import set_flags, flags
+from classes import Auth, geotag_methods
 from obs_processing import *
 from api_interactions import upload_obs
 from custom_logging import create_logger
 # TODO: tooltips
 # TODO: Even out spacing
-# TODO: Logging through the other modules
+# TODO: Test logging
+# TODO: Keyfile layout
 
 logger = create_logger(Path(__file__).parent, Path(__file__).stem)
 
@@ -132,7 +134,7 @@ while True:                 # Event Loop
     if event is None or event == 'Exit':
         break
     if event == 'Show':
-        # change the "output" element to be the value of "input" element
+        # Update the gui
         window.Element('_OUTPUT_').Update(values['_IN_'])
         logger.debug('Window updated')
         
@@ -140,17 +142,16 @@ while True:                 # Event Loop
         window.Element('api_pass').Update(disabled=  values['USE_SECURE_KEYRING'])
         window.Element('api_id').Update(disabled=  values['USE_SECURE_KEYRING'])
         window.Element('api_secret').Update(disabled=  values['USE_SECURE_KEYRING'])
-        # TODO: Make sure Auth runs when this event fires and something is already in the user textbox
+        # TODO: When processing starts, make sure to update these fields after Auth populates, or popup and continue if
+        #  it fails
         logger.debug('Credentials updated')
-    if event == 'check_keyring':
-        # TODO: Implement this to refresh the credentials area
-        pass
    
     if event == 'Begin processing':
         
         if values['path_working'] == '':
-            #TODO: Popup this as well for clarity
-            logger.error('No working directory specified, nothing to do')
+            msg = 'No working directory specified, nothing to do'
+            logger.error(msg)
+            sg.PopupError(msg,title='No working directory')
             continue
         logger.info('Here we go')
         

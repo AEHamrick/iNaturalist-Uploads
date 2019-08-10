@@ -11,10 +11,9 @@ from pendulum import DateTime
 import PIL
 from PIL import ExifTags, Image
 
+from logging import getLogger
 
-
-from classes import Observation
-
+logger = getLogger()
 
 def nearest_datetime(items: List[DateTime], target: DateTime):
     '''
@@ -25,12 +24,14 @@ def nearest_datetime(items: List[DateTime], target: DateTime):
     '''
 
     #Didn't come up with this, pretty neat
-    return min(items, key=lambda x: abs(x - target))
+    nearest = min(items, key=lambda x: abs(x - target))
+    logger.debug(nearest)
+    return nearest
 
 
 def has_donefile(d: Union[str, pathlib.Path]) -> bool:
     '''
-    Check a directory for existence of a '.done' file used as a flag
+    Check a directory for existence of a '.done' file used as a flag to avoid duplicate observation upload
 
     :param d: input directory
     :return: True if any file with the string '.done' in its name exists in input dir d else False
@@ -41,6 +42,7 @@ def has_donefile(d: Union[str, pathlib.Path]) -> bool:
     files: List[pathlib.Path] = [x for x in d.iterdir() if x.is_file()]
 
     if any(['.done' in x.name for x in files]):
+        logger.info('found .done file in {0}'.format(d))
         return True
     else:
         return False
@@ -55,10 +57,14 @@ def get_lat_long(image):
         if k in PIL.ExifTags.TAGS
     }
 
+    latitude = None
+    longitude = None
+
     # From all the exif data, pulls the GPS data
     gps_info = exif.get('GPSInfo')
     # The GPS data is in a odd format, so have to dig for it a bit. This was
-    # only tested on files lightroom tagged. 
+    # only tested on files lightroom tagged.
+    # TODO: See if there's a module for this so we don't have to mess with it
     latitude_direction = str(gps_info.get(1)[0])
     latitude_degrees = float(gps_info.get(2)[0][0])
     minutes = float(gps_info.get(2)[1][0])
@@ -74,7 +80,7 @@ def get_lat_long(image):
         latitude = latitude_degrees+latitude_minutes/60 \
                     + latitude_seconds/3600
     elif latitude_direction == 'S' or latitude_direction == 's':
-        latitude = -(latitude_degrees+latitude_minutes/60 \
+        latitude = -(latitude_degrees+latitude_minutes/60
                     + latitude_seconds/3600)
         
     longitude_direction = gps_info.get(3)[0]
@@ -90,20 +96,24 @@ def get_lat_long(image):
         longitude = longitude_degrees+longitude_minutes/60 \
                     + longitude_seconds/3600
     elif longitude_direction == 'W' or longitude_direction == 'w':
-        longitude = -(longitude_degrees+longitude_minutes/60 \
+        longitude = -(longitude_degrees+longitude_minutes/60
                     + longitude_seconds/3600)
     
     latitude_longitude = [latitude, longitude]
     
-    # Returns a list with both latitude and longiude in decimal format.
+    # Returns a list with both latitude and longitude in decimal format.
     return latitude_longitude
 
-
-# Pulls the date information from 
 def get_created_date(image: str) -> DateTime:
-
-    # Pulls the date and time from the exif format;
-    # Exif.Image.DateTimeOriginal is 36867 decimal or 0x9003 hex
+    
+    '''
+    Pulls the date and time from the exif format
+    
+    Can't use the file attributes here because modification e.g., rotating, will overwrite created, modified,
+    and accessed timestamps. Have to go to EXIF for this then.
+    
+    Exif.Image.DateTimeOriginal is 36867 decimal or 0x9003 hex
+    '''
     
     date_and_time = PIL.Image.open(image)._getexif()[36867]
 
