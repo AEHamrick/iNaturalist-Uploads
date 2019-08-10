@@ -2,6 +2,7 @@ from pathlib import Path
 import os
 from typing import Dict, Any, List
 from classes import Observation
+from config import geotag_methods, flags
 from gpx import accumulate_gps_points
 from PIL import Image
 from utility import get_created_date, get_lat_long, nearest_datetime, has_donefile
@@ -76,7 +77,7 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
 
     return observations
 
-def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str, values:Dict):
+def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str, working_path:Path):
     '''
 
     :param observations:
@@ -85,8 +86,9 @@ def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str
     :return:
     '''
 
-    if geotag_method == 'None':
-        return
+    
+    if geotag_method == geotag_methods.manual:
+        raise ValueError('Manual geotagging selection somehow got into the assign coordinates logic')
         
     #Iterate over observations, never reprocess one that already has coordinates
     for obs in [x for x in observations if x.coordinates != [None,None]]:
@@ -101,12 +103,12 @@ def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str
 
 
         if geotag_method == 'GPX':
-            gps_points = accumulate_gps_points(Path(values['path_working']) / 'gpx')
+            gps_points = accumulate_gps_points(working_path / 'gpx')
             
             coordinates = gps_points[nearest_datetime(list(gps_points.keys()), obs.observed_on)]
 
         obs.coordinates = coordinates
-        obs.geotag_accuracy = values['geotag_acc']
+        obs.geotag_accuracy = flags['GEOTAG_ACCURACY']
 
 
 def process_rules(observations: List[Observation], flags: Dict[str,bool]):

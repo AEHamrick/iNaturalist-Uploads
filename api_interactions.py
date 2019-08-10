@@ -8,7 +8,7 @@ import config
 from requests import HTTPError
 
 
-def upload_obs(obs: Observation):
+def upload_obs(obs: Observation, token:str):
 
 
     params = {'observation':
@@ -27,7 +27,7 @@ def upload_obs(obs: Observation):
                    }, }
 
     try:
-        r = create_observations(params=params, access_token=config.Auth.token)
+        r = create_observations(params=params, access_token=token)
     
         obs.inat_id = r[0]['id']
     
@@ -35,7 +35,7 @@ def upload_obs(obs: Observation):
     
             r = add_photo_to_observation(observation_id=obs.inat_id ,
                                          file_object=open(file, 'rb'),
-                                         access_token=config.Auth.token)
+                                         access_token=token)
 
     except HTTPError as ex:
         obs.inat_result = 'Error creating observation: {0}'.format(ex)

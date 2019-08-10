@@ -5,8 +5,8 @@ else:
     import PySimpleGUI27 as sg
 
 #TODO: Oops, having this in gitignore is more secure but hampers working on multiple devices; sort that
-from creds import iNat
-from config import Auth
+
+from config import Auth, set_flags, flags, geotag_methods
 from obs_processing import *
 from api_interactions import upload_obs
 
@@ -20,10 +20,10 @@ tooltips = {}
 # TODO: Get rid of hardcoded creds
 config_layout = \
     [[sg.Checkbox('Use system keyring', key = 'USE_SECURE_KEYRING', default=True, enable_events=True)],
-     [sg.Text('User'),sg.In(default_text=iNat.USER.value,key='api_user')],
-     [sg.Text('Pass'),sg.In(default_text=iNat.PWD.value,key='api_pass',password_char='*',disabled=True)],
-     [sg.Text('App id'),sg.In(default_text=iNat.APP_ID.value,key='api_id',size=(65, None),disabled=True)],
-     [sg.Text('API secret'), sg.In(default_text=iNat.SECRET.value, key='api_secret',size=(65, None),disabled=True)]
+     [sg.Text('User'),sg.In(default_text='',key='api_user', enable_events=True)],
+     [sg.Text('Pass'),sg.In(default_text='',key='api_pass',password_char='*',disabled=True)],
+     [sg.Text('App id'),sg.In(default_text='',key='api_id',size=(65, None),disabled=True)],
+     [sg.Text('API secret'), sg.In(default_text='', key='api_secret',size=(65, None),disabled=True)]
     ]
 
 config = sg.Frame('Config',
@@ -141,23 +141,34 @@ while True:                 # Event Loop
         window.Element('api_pass').Update(disabled=  values['USE_SECURE_KEYRING'])
         window.Element('api_id').Update(disabled=  values['USE_SECURE_KEYRING'])
         window.Element('api_secret').Update(disabled=  values['USE_SECURE_KEYRING'])
-        
+        # TODO: Make sure Auth runs when this event fires and something is already in the user textbox
+
+    if event == 'check_keyring':
+        pass
+   
     if event == 'Begin processing':
-    
+        
+        if values['path_working'] == '':
+            #TODO: Error here or something
+            continue
+            
+        
+        set_flags(values)
+
         auth = Auth(values['api_user'])
+        
+        window.Element('api_id').Update(auth.app_id)
+        window.Element('api_secret').Update(auth.app_secret)
         
         #Assemble observations from working folder with taxon, file(s), date, global values
         obs = assemble_skeleton_observations(Path(values['path_working']))
         #Run primary geotagging
-        if not values['geotag_primary_manual']:
-            assign_coordinates_to_obs(obs,'{0}{1}'.format('GPX' if values['geotag_primary_gpx'] else '', # TODO: This is kind of hacky?
-                                                          'EXIF' if values['geotag_primary_exif'] else ''),
-                                  values)
+        if not flags['GEOTAG_PRIMARY'] == geotag_methods.manual:
+            assign_coordinates_to_obs(obs, flags['GEOTAG_PRIMARY'], Path(values['path_working']))
+            
             #Run secondary geotagging if applicable
-            if values['geotag_fallback_flag']:
-                assign_coordinates_to_obs(obs, '{0}{1}'.format('GPX' if not values['geotag_primary_gpx'] else '',
-                                                               'EXIF' if not values['geotag_primary_exif'] else ''),
-                                      values)
+            if flags['GEOTAG_FALLBACK']:
+                assign_coordinates_to_obs(obs, geotag_methods.get_fallback_method(flags['GEOTAG_PRIMARY']), Path(values['path_working']))
     
         # TODO: Apply processing rules if indicated
         #process_rules(obs)
@@ -169,7 +180,7 @@ while True:                 # Event Loop
         
         #Transmit observations
         for o in obs:
-            upload_obs(o)
+            upload_obs(o, auth.token)
         
         #Create .done files
         for o in [x for x in obs if x.inat_result == 'ok']:
