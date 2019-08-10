@@ -29,7 +29,6 @@ def set_flags(values:Dict[str,Any]):
                                                   #   addition of data to some or all observations in a batch
 
     #endregion
-
     #region: Processing observation level
     flags['GEOTAG_PRIMARY'] = geotag_methods.get_method(values) # GPX, EXIF, manual source for geotag
     flags['GEOTAG_FALLBACK'] = values['geotag_fallback_flag']   # If the selected geotag source has no data, try the other as a backup

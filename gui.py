@@ -4,20 +4,19 @@ if sys.version_info[0] >= 3:
 else:
     import PySimpleGUI27 as sg
 
-#TODO: Oops, having this in gitignore is more secure but hampers working on multiple devices; sort that
-
 from config import Auth, set_flags, flags, geotag_methods
 from obs_processing import *
 from api_interactions import upload_obs
+from custom_logging import create_logger
+# TODO: tooltips
+# TODO: Even out spacing
+# TODO: Logging through the other modules
 
-#TODO: tooltips
-#TODO: Even out spacing
-# TODO: Flags method
+logger = create_logger(Path(__file__).parent, Path(__file__).stem)
+
 tooltips = {}
 
 #region: config frame
-# TODO: Get the credentials to update when user is changed
-# TODO: Get rid of hardcoded creds
 config_layout = \
     [[sg.Checkbox('Use system keyring', key = 'USE_SECURE_KEYRING', default=True, enable_events=True)],
      [sg.Text('User'),sg.In(default_text='',key='api_user', enable_events=True)],
@@ -71,7 +70,6 @@ options = sg.Frame('Options',
                    tooltip=None,
                    right_click_menu=None,
                    visible=True)
-
 
 #endregion
 #region: file nav frame
@@ -127,7 +125,7 @@ layout = [[config],
           [sg.Exit()]]
 
 window = sg.Window('iNaturalist bulk upload', layout)
-
+logger.info('Entering event loop')
 while True:                 # Event Loop
     event, values = window.Read()
     print(event, values)
@@ -136,38 +134,47 @@ while True:                 # Event Loop
     if event == 'Show':
         # change the "output" element to be the value of "input" element
         window.Element('_OUTPUT_').Update(values['_IN_'])
-    
+        logger.debug('Window updated')
+        
     if event == 'USE_SECURE_KEYRING':
         window.Element('api_pass').Update(disabled=  values['USE_SECURE_KEYRING'])
         window.Element('api_id').Update(disabled=  values['USE_SECURE_KEYRING'])
         window.Element('api_secret').Update(disabled=  values['USE_SECURE_KEYRING'])
         # TODO: Make sure Auth runs when this event fires and something is already in the user textbox
-
+        logger.debug('Credentials updated')
     if event == 'check_keyring':
+        # TODO: Implement this to refresh the credentials area
         pass
    
     if event == 'Begin processing':
         
         if values['path_working'] == '':
-            #TODO: Error here or something
+            #TODO: Popup this as well for clarity
+            logger.error('No working directory specified, nothing to do')
             continue
-            
+        logger.info('Here we go')
         
         set_flags(values)
-
+        logger.debug('Flags set')
         auth = Auth(values['api_user'])
         
         window.Element('api_id').Update(auth.app_id)
         window.Element('api_secret').Update(auth.app_secret)
+        logger.debug('Auth set')
         
         #Assemble observations from working folder with taxon, file(s), date, global values
         obs = assemble_skeleton_observations(Path(values['path_working']))
+        logger.info('{0} observations found'.format(str(len(obs))))
+        
         #Run primary geotagging
         if not flags['GEOTAG_PRIMARY'] == geotag_methods.manual:
+            logger.info('Starting {0} geotagging'.format(flags['GEOTAG_PRIMARY'].value))
             assign_coordinates_to_obs(obs, flags['GEOTAG_PRIMARY'], Path(values['path_working']))
             
             #Run secondary geotagging if applicable
             if flags['GEOTAG_FALLBACK']:
+                logger.info('Starting fallback geotagging for {0} observations'.format(str(len([x for x in obs if not x.coordinates]))))
+                
                 assign_coordinates_to_obs(obs, geotag_methods.get_fallback_method(flags['GEOTAG_PRIMARY']), Path(values['path_working']))
     
         # TODO: Apply processing rules if indicated
@@ -179,12 +186,21 @@ while True:                 # Event Loop
         # TODO: Consume completed keyfile
         
         #Transmit observations
+        logger.info('Transmitting observations')
         for o in obs:
             upload_obs(o, auth.token)
         
         #Create .done files
-        for o in [x for x in obs if x.inat_result == 'ok']:
+        ok_result = [x for x in obs if x.inat_result == 'ok']
+        logger.info('{0} ok response(s) received out of {1} observation(s)'.format(str(len(ok_result)),
+                                                                            str(len(obs))))
+        
+        logger.info('Creating .done files for {0} ok responses'.format(str(len(ok_result))))
+        for o in ok_result:
             (o.path / '.done').touch()
+            
+        logger.info('Finished with this batch')
 
 
+logger.info('Exiting')
 window.Close()
