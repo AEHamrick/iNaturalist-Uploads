@@ -2,3 +2,4 @@
 .idea/*
 creds.py
 *.pyc
+/testing/
