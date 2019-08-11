@@ -4,17 +4,19 @@ if sys.version_info[0] >= 3:
 else:
     import PySimpleGUI27 as sg
 
-from config import set_flags, flags
-from classes import Auth, geotag_methods
+
+from config import set_flags, flags, geotag_methods
 from obs_processing import *
-from api_interactions import upload_obs
+from api_interactions import upload_obs, Auth
 from custom_logging import create_logger
+
 # TODO: tooltips
 # TODO: Even out spacing
 # TODO: Test logging
 # TODO: Keyfile layout
+# TODO: Upload in batches with a pause in between to check iNat and made adjustments if needed
 
-logger = create_logger(Path(__file__).parent, Path(__file__).stem)
+logger = create_logger(Path(__file__).parent, 'iNat')
 
 tooltips = {}
 
@@ -154,16 +156,18 @@ while True:                 # Event Loop
             sg.PopupError(msg,title='No working directory')
             continue
         logger.info('Here we go')
-        
         set_flags(values)
         logger.debug('Flags set')
         auth = Auth(values['api_user'])
-        
+
         window.Element('api_id').Update(auth.app_id)
         window.Element('api_secret').Update(auth.app_secret)
         logger.debug('Auth set')
         
         #Assemble observations from working folder with taxon, file(s), date, global values
+        # TODO: Rework this to handle one obs or obs folder at a time so one bad file doesn't kill the batch before
+        #   .done files are written
+        
         obs = assemble_skeleton_observations(Path(values['path_working']))
         logger.info('{0} observations found'.format(str(len(obs))))
         
@@ -201,7 +205,6 @@ while True:                 # Event Loop
             (o.path / '.done').touch()
             
         logger.info('Finished with this batch')
-
 
 logger.info('Exiting')
 window.Close()

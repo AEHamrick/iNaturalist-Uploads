@@ -117,4 +117,8 @@ def get_created_date(image: str) -> DateTime:
     
     date_and_time = PIL.Image.open(image)._getexif()[36867]
 
+    # TODO: Default value of current date is probably best here
+    if date_and_time is None:
+        raise ValueError('No creation date in EXIF')
+
     return DateTime.strptime(date_and_time,'%Y:%m:%d %H:%M:%S')

@@ -1,11 +1,52 @@
 
-from pyinaturalist.rest_api import create_observations
-from pyinaturalist.rest_api import add_photo_to_observation
+from pyinaturalist.rest_api import create_observations, add_photo_to_observation, get_access_token
 from classes import Observation
 from logging import getLogger
 from requests import HTTPError
+from typing import Optional
+import keyring
+
+from config import flags
 
 logger = getLogger()
+
+
+class Auth:
+    '''
+    Manage the iNat credentials
+    '''
+    
+    token = ''
+    app_id = ''
+    app_secret = ''
+    
+    def __init__(self, user: str,
+                 pwd: Optional[str] = None,
+                 app_id: Optional[str] = None,
+                 app_secret: Optional[str] = None):
+        
+        if flags['USE_SECURE_KEYRING']:
+            
+            # TODO: Figure out a better way to store creds in windows that corresponds to the service / user / password model
+            #  that keyring uses
+            
+            self.app_id = keyring.get_password('iNat_app_id', '{0}'.format(user))
+            self.app_secret = keyring.get_password('iNat_secret', '{0}'.format(user))
+            
+            # TODO: Add some error checking and logging around this
+            self.token = get_access_token(username=user,
+                                          password=keyring.get_password('iNat', user),
+                                          app_id=self.app_id,
+                                          app_secret=self.app_secret)
+        else:
+            
+            self.app_id = app_id
+            self.app_secret = app_secret
+            
+            self.token = get_access_token(username=user,
+                                          password=pwd,
+                                          app_id=app_id,
+                                          app_secret=app_secret)
 
 
 def upload_obs(obs: Observation, token:str):
@@ -50,8 +91,6 @@ def upload_obs(obs: Observation, token:str):
         logger.info('Success')
         obs.inat_result = 'ok'
     
-    
-
 def get_taxon_id(name:str) -> str:
     
     #TODO: Need to be able to get a taxon ID from the API or from the web interface to simplify setting up the upload folders

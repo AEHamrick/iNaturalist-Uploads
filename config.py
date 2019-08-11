@@ -1,6 +1,6 @@
-from classes import geotag_methods
 from typing import Dict, Optional, Any
 from logging import getLogger
+from enum import Enum
 flags = {}
 
 logger = getLogger()
@@ -19,7 +19,7 @@ def set_flags(values:Dict[str,Any]):
     flags['USE_SECURE_KEYRING'] = values['USE_SECURE_KEYRING'] # Use system credential store via the keyring module
     flags['IGNORE_DONEFILES'] = False                          # Ignore .done files in observation folders;
                                                                #  i.e., treat as un-uploaded observation
-
+    flags['GPX_DIR_NAME'] = 'gpx'                              # easier to skip this folder in a few places
 
     #region: Processing batch level
     flags['USE_PER_BATCH_METADATA'] = False       # Unused; Allow usage of meta-data that applies universally e.g., tag for a bioBlitz event
@@ -36,5 +36,40 @@ def set_flags(values:Dict[str,Any]):
     #endregion
 
     logger.info('Flags set')
-        
-        
+
+
+
+#region: data structures
+class geotag_methods(Enum):
+    gpx = 'GPX'
+    exif = 'EXIF'
+    manual = 'MANUAL'
+    
+    @staticmethod
+    def get_method(values):
+        if values['geotag_primary_gpx']:
+            return geotag_methods.gpx
+        elif values['geotag_primary_exif']:
+            return geotag_methods.exif
+        elif values['geotag_primary_manual']:
+            return geotag_methods.manual
+        else:
+            raise ValueError('Mismatch between values from GUI and geotag methods')
+    
+    @staticmethod
+    def get_fallback_method(primary):
+        if primary == geotag_methods.gpx:
+            return geotag_methods.exif
+        elif primary == geotag_methods.exif:
+            return geotag_methods.gpx
+        else:
+            raise ValueError('Mismatch between values from GUI and geotag fallback method')
+
+
+class geotag_privacy(Enum):
+    # TODO: Implement in gui and observation processing
+    open = 'Public'
+    obscured = 'Obscured'
+    private = 'Private'
+
+#endregion

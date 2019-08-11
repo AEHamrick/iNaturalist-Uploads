@@ -10,7 +10,7 @@ coordinates a photo was taken based on timestamp.
 import gpxpy
 import pathlib
 from pytz import timezone
-from pendulum import DateTime, Period, Duration
+from pendulum import DateTime, Period, Duration, instance
 import os
 import sys
 from typing import Union, List, Tuple, Dict
@@ -43,8 +43,8 @@ def parse_gpx(gpx_file: Union[pathlib.Path,str]) -> Dict[DateTime, Tuple[str,str
                 if point.time == None:
                     continue
                 # Timestamp in the form of 2018-10-13T15:01:52Z
-                timestamp = DateTime.strptime(point.time,'%Y-%m-%dT%H:%M:%S%z')
-                points[timestamp] = (point.latitude,point.longitude)
+                #timestamp = DateTime.strftime(point.time,'%Y-%m-%dT%H:%M:%S%z')
+                points[instance(point.time)] = (point.latitude,point.longitude)
     
     logger.info('Found {0} gps points with timestamp'.format(str(len(points))))
     

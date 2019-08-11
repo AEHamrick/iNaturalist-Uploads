@@ -10,10 +10,16 @@ def create_logger(logpath:Path, basename) -> logging.Logger:
     #Doesn't seem like any need for a rotating file handler or anything fancy given the volume of usage
     hnd = logging.FileHandler(logpath / '{0}.log'.format(basename))
     
+    s_hnd = logging.StreamHandler(stream=sys.stdout)
+    
     hnd.setFormatter(fmt)
+    s_hnd.setFormatter(fmt)
+    logger = logging.getLogger()
     
-    logger = logging.Logger('iNat')
-    
+    logger.setLevel(logging.DEBUG)
     logger.addHandler(hnd)
+    logger.addHandler(s_hnd)
+    
+    logger.info('Logging set up')
     
     return logger

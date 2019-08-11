@@ -36,7 +36,7 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
     logger.debug('assemble_skeleton_observations()')
     
     logger.info('Found these top level taxon dirs in {0}'.format(working_dir))
-    for d in [x for x in working_dir.iterdir() if x.is_dir()]:
+    for d in [x for x in working_dir.iterdir() if x.is_dir() and x.name != flags['GPX_DIR_NAME']]:
         taxon_dirs.append(working_dir / d)
         logger.info('{0}'.format(d))
         
@@ -113,7 +113,7 @@ def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str
         
     #Iterate over observations, never reprocess one that already has coordinates
 
-    if geotag_method == 'EXIF':
+    if geotag_method == geotag_methods.exif:
         for obs in [x for x in observations if not x.coordinates]:
             logger.info('Using EXIF')
             with Image.open(obs.photos[0]) as img:
@@ -121,7 +121,7 @@ def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str
             obs.geotag_accuracy = flags['GEOTAG_ACCURACY']
 
 
-    if geotag_method == 'GPX':
+    if geotag_method == geotag_methods.gpx:
         gps_points = accumulate_gps_points(working_path / 'gpx')
         logger.info('Using GPX')
         

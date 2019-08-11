@@ -1,0 +1,649 @@
+2019-08-10 22:25:58  INFO Logging set up
+2019-08-10 22:28:50  INFO Logging set up
+2019-08-10 22:29:01  INFO Entering event loop
+2019-08-10 22:29:30  INFO Here we go
+2019-08-10 22:29:30  DEBUG Flags set
+2019-08-10 22:29:30  DEBUG Auth set
+2019-08-10 22:30:38  INFO Logging set up
+2019-08-10 22:30:38  INFO Entering event loop
+2019-08-10 22:30:55  INFO Here we go
+2019-08-10 22:30:55  DEBUG Flags set
+2019-08-10 22:30:55  DEBUG Auth set
+2019-08-10 22:34:28  INFO Logging set up
+2019-08-10 22:34:28  INFO Entering event loop
+2019-08-10 22:34:42  INFO Here we go
+2019-08-10 22:34:42  DEBUG Flags set
+2019-08-10 22:34:42  DEBUG Auth set
+2019-08-10 22:38:23  INFO Logging set up
+2019-08-10 22:38:23  INFO Entering event loop
+2019-08-10 22:40:48  INFO Here we go
+2019-08-10 22:40:48  DEBUG Flags set
+2019-08-10 22:40:49  DEBUG Auth set
+2019-08-10 22:41:00  INFO Logging set up
+2019-08-10 22:41:00  INFO Entering event loop
+2019-08-10 22:41:10  INFO Here we go
+2019-08-10 22:41:10  DEBUG Flags set
+2019-08-10 22:41:10  DEBUG Auth set
+2019-08-10 22:45:08  INFO Logging set up
+2019-08-10 22:45:08  INFO Entering event loop
+2019-08-10 22:50:36  INFO Here we go
+2019-08-10 22:50:36  DEBUG Flags set
+2019-08-10 22:50:36  DEBUG Auth set
+2019-08-10 22:51:13  INFO Logging set up
+2019-08-10 22:54:51  INFO Logging set up
+2019-08-10 22:54:51  INFO Entering event loop
+2019-08-10 22:54:58  INFO Logging set up
+2019-08-10 22:55:05  INFO Entering event loop
+2019-08-10 22:55:51  INFO Here we go
+2019-08-10 22:55:51  INFO Flags set
+2019-08-10 22:55:51  DEBUG Flags set
+2019-08-10 22:55:51  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 22:55:52  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 None
+2019-08-10 22:55:52  DEBUG Auth set
+2019-08-10 22:55:52  DEBUG assemble_skeleton_observations()
+2019-08-10 22:55:52  INFO Found these top level taxon dirs in D:\workspace\iNaturalist-Uploads\testing
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus
+2019-08-10 22:56:01  INFO D:\workspace\iNaturalist-Uploads\testing\gpx
+2019-08-10 22:56:01  INFO Traversing taxon dirs
+2019-08-10 23:02:51  INFO Logging set up
+2019-08-10 23:02:51  INFO Entering event loop
+2019-08-10 23:03:02  INFO Here we go
+2019-08-10 23:03:02  INFO Flags set
+2019-08-10 23:03:02  DEBUG Flags set
+2019-08-10 23:03:02  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:03:02  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 None
+2019-08-10 23:03:02  DEBUG Auth set
+2019-08-10 23:03:02  DEBUG assemble_skeleton_observations()
+2019-08-10 23:03:02  INFO Found these top level taxon dirs in D:\workspace\iNaturalist-Uploads\testing
+2019-08-10 23:03:33  INFO D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:03:36  INFO D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:03:36  INFO D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:03:37  INFO D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:03:37  INFO D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:03:38  INFO D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:03:39  INFO D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:04:33  INFO Logging set up
+2019-08-10 23:04:33  INFO Entering event loop
+2019-08-10 23:04:53  INFO Here we go
+2019-08-10 23:04:53  INFO Flags set
+2019-08-10 23:04:53  DEBUG Flags set
+2019-08-10 23:04:53  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:04:53  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 None
+2019-08-10 23:04:53  DEBUG Auth set
+2019-08-10 23:04:53  DEBUG assemble_skeleton_observations()
+2019-08-10 23:04:53  INFO Found these top level taxon dirs in D:\workspace\iNaturalist-Uploads\testing
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:04:53  INFO D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus
+2019-08-10 23:04:53  INFO Traversing taxon dirs
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO 2 photos total
+2019-08-10 23:08:29  INFO 3 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO 2 photos total
+2019-08-10 23:08:29  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO 2 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO 2 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO 2 photos total
+2019-08-10 23:08:29  INFO 3 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 1 photos total
+2019-08-10 23:08:29  INFO Creating observation for top level taxon dir
+2019-08-10 23:08:29  INFO 0 photos total
+2019-08-10 23:08:29  INFO 0 photos total
+2019-08-10 23:08:29  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\1
+2019-08-10 23:08:29  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\2
+2019-08-10 23:08:29  INFO 10 observations total
+2019-08-10 23:08:29  INFO 10 observations found
+2019-08-10 23:08:29  INFO Starting GPX geotagging
+2019-08-10 23:08:29  DEBUG assign_coordinates_to_obs
+2019-08-10 23:08:29  INFO Transmitting observations
+2019-08-10 23:08:29  DEBUG upload_obs()
+2019-08-10 23:08:29  INFO Uploading observation for taxon 27120
+2019-08-10 23:08:29  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:08:30  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:08:30  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:08:37  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:08:37  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:08:42  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:08:42  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:08:48  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:08:48  INFO Success
+2019-08-10 23:08:48  DEBUG upload_obs()
+2019-08-10 23:08:48  INFO Uploading observation for taxon 46020
+2019-08-10 23:08:48  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:08:49  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 720
+2019-08-10 23:08:49  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:08:55  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:08:55  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:00  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:00  INFO Success
+2019-08-10 23:09:00  DEBUG upload_obs()
+2019-08-10 23:09:00  INFO Uploading observation for taxon 46095
+2019-08-10 23:09:00  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:01  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:09:01  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:06  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:06  INFO Success
+2019-08-10 23:09:06  DEBUG upload_obs()
+2019-08-10 23:09:06  INFO Uploading observation for taxon 47125
+2019-08-10 23:09:06  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:08  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:09:08  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:14  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:14  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:19  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:19  INFO Success
+2019-08-10 23:09:19  DEBUG upload_obs()
+2019-08-10 23:09:19  INFO Uploading observation for taxon 47731
+2019-08-10 23:09:19  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:20  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:09:20  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:27  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:27  INFO Success
+2019-08-10 23:09:27  DEBUG upload_obs()
+2019-08-10 23:09:27  INFO Uploading observation for taxon 47783
+2019-08-10 23:09:27  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:28  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:09:28  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:33  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:33  INFO Success
+2019-08-10 23:09:33  DEBUG upload_obs()
+2019-08-10 23:09:33  INFO Uploading observation for taxon 47951
+2019-08-10 23:09:33  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:34  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:09:34  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:39  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:39  INFO Success
+2019-08-10 23:09:39  DEBUG upload_obs()
+2019-08-10 23:09:39  INFO Uploading observation for taxon 48124
+2019-08-10 23:09:39  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:41  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:09:41  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:46  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:46  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:51  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:51  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:56  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:09:56  INFO Success
+2019-08-10 23:09:56  DEBUG upload_obs()
+2019-08-10 23:09:56  INFO Uploading observation for taxon 4937
+2019-08-10 23:09:56  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:09:59  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:09:59  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:10:04  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:10:04  INFO Success
+2019-08-10 23:10:04  DEBUG upload_obs()
+2019-08-10 23:10:04  INFO Uploading observation for taxon 5067
+2019-08-10 23:10:04  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:10:05  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:10:05  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:10:11  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:10:11  INFO Success
+2019-08-10 23:10:11  INFO 10 ok response(s) received out of 10 observation(s)
+2019-08-10 23:10:11  INFO Creating .done files for 10 ok responses
+2019-08-10 23:10:11  INFO Finished with this batch
+2019-08-10 23:12:23  INFO Exiting
+2019-08-10 23:29:23  INFO Logging set up
+2019-08-10 23:29:23  INFO Entering event loop
+2019-08-10 23:29:38  INFO Here we go
+2019-08-10 23:29:38  INFO Flags set
+2019-08-10 23:29:38  DEBUG Flags set
+2019-08-10 23:29:38  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:29:38  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 None
+2019-08-10 23:29:38  DEBUG Auth set
+2019-08-10 23:29:38  DEBUG assemble_skeleton_observations()
+2019-08-10 23:29:38  INFO Found these top level taxon dirs in D:\workspace\iNaturalist-Uploads\testing
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\179745
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:29:38  INFO D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus
+2019-08-10 23:29:38  INFO Traversing taxon dirs
+2019-08-10 23:30:05  INFO Logging set up
+2019-08-10 23:30:05  INFO Entering event loop
+2019-08-10 23:30:14  INFO Here we go
+2019-08-10 23:30:14  INFO Flags set
+2019-08-10 23:30:14  DEBUG Flags set
+2019-08-10 23:30:14  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:30:15  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 142
+2019-08-10 23:30:15  DEBUG Auth set
+2019-08-10 23:30:15  DEBUG assemble_skeleton_observations()
+2019-08-10 23:30:15  INFO Found these top level taxon dirs in D:\workspace\iNaturalist-Uploads\testing
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\179745-Akanthomyces
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:30:15  INFO D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus
+2019-08-10 23:30:15  INFO Traversing taxon dirs
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO Creating observation for top level taxon dir
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO 3 photos total
+2019-08-10 23:30:15  INFO 4 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO 3 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO 3 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO 3 photos total
+2019-08-10 23:30:15  INFO 4 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:30:15  INFO 1 photos total
+2019-08-10 23:30:15  INFO 2 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:30:15  INFO 0 photos total
+2019-08-10 23:30:15  INFO 0 photos total
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\1
+2019-08-10 23:30:15  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\2
+2019-08-10 23:30:15  INFO 1 observations total
+2019-08-10 23:30:15  INFO 1 observations found
+2019-08-10 23:30:15  INFO Starting GPX geotagging
+2019-08-10 23:30:15  DEBUG assign_coordinates_to_obs
+2019-08-10 23:30:15  DEBUG accumulate_gps_points()
+2019-08-10 23:30:15  DEBUG parse_gpx()
+2019-08-10 23:30:15  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\hartwood blue.gpx
+2019-08-10 23:30:15  DEBUG Accumulating gps points
+2019-08-10 23:31:22  INFO Logging set up
+2019-08-10 23:31:22  INFO Entering event loop
+2019-08-10 23:31:31  INFO Here we go
+2019-08-10 23:31:31  INFO Flags set
+2019-08-10 23:31:31  DEBUG Flags set
+2019-08-10 23:31:31  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:31:31  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 None
+2019-08-10 23:31:31  DEBUG Auth set
+2019-08-10 23:31:31  DEBUG assemble_skeleton_observations()
+2019-08-10 23:31:31  INFO Found these top level taxon dirs in D:\workspace\iNaturalist-Uploads\testing
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\179745-Akanthomyces
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:31:31  INFO D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus
+2019-08-10 23:31:31  INFO Traversing taxon dirs
+2019-08-10 23:31:31  INFO 1 photos total
+2019-08-10 23:31:31  INFO Creating observation for top level taxon dir
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO 3 photos total
+2019-08-10 23:31:32  INFO 4 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO 3 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO 3 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO 3 photos total
+2019-08-10 23:31:32  INFO 4 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:31:32  INFO 1 photos total
+2019-08-10 23:31:32  INFO 2 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:31:32  INFO 0 photos total
+2019-08-10 23:31:32  INFO 0 photos total
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\1
+2019-08-10 23:31:32  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\2
+2019-08-10 23:31:32  INFO 1 observations total
+2019-08-10 23:31:32  INFO 1 observations found
+2019-08-10 23:31:32  INFO Starting GPX geotagging
+2019-08-10 23:31:32  DEBUG assign_coordinates_to_obs
+2019-08-10 23:31:32  DEBUG accumulate_gps_points()
+2019-08-10 23:31:32  DEBUG parse_gpx()
+2019-08-10 23:31:32  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\hartwood blue.gpx
+2019-08-10 23:31:32  DEBUG Accumulating gps points
+2019-08-10 23:35:02  INFO Logging set up
+2019-08-10 23:35:02  INFO Entering event loop
+2019-08-10 23:35:09  INFO Here we go
+2019-08-10 23:35:09  INFO Flags set
+2019-08-10 23:35:09  DEBUG Flags set
+2019-08-10 23:35:09  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:35:10  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 None
+2019-08-10 23:35:10  DEBUG Auth set
+2019-08-10 23:35:10  DEBUG assemble_skeleton_observations()
+2019-08-10 23:35:10  INFO Found these top level taxon dirs in D:\workspace\iNaturalist-Uploads\testing
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\179745-Akanthomyces
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:35:10  INFO D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus
+2019-08-10 23:35:10  INFO Traversing taxon dirs
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO Creating observation for top level taxon dir
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO 3 photos total
+2019-08-10 23:35:10  INFO 4 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO 3 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO 3 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO 3 photos total
+2019-08-10 23:35:10  INFO 4 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:35:10  INFO 1 photos total
+2019-08-10 23:35:10  INFO 2 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:35:10  INFO 0 photos total
+2019-08-10 23:35:10  INFO 0 photos total
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\1
+2019-08-10 23:35:10  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\2
+2019-08-10 23:35:10  INFO 1 observations total
+2019-08-10 23:35:10  INFO 1 observations found
+2019-08-10 23:35:10  INFO Starting GPX geotagging
+2019-08-10 23:35:10  DEBUG assign_coordinates_to_obs
+2019-08-10 23:35:10  DEBUG accumulate_gps_points()
+2019-08-10 23:35:10  DEBUG parse_gpx()
+2019-08-10 23:35:10  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\hartwood blue.gpx
+2019-08-10 23:35:10  DEBUG Accumulating gps points
+2019-08-10 23:36:50  INFO Logging set up
+2019-08-10 23:36:50  INFO Entering event loop
+2019-08-10 23:36:59  INFO Here we go
+2019-08-10 23:36:59  INFO Flags set
+2019-08-10 23:36:59  DEBUG Flags set
+2019-08-10 23:36:59  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:36:59  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 141
+2019-08-10 23:36:59  DEBUG Auth set
+2019-08-10 23:36:59  DEBUG assemble_skeleton_observations()
+2019-08-10 23:36:59  INFO Found these top level taxon dirs in D:\workspace\iNaturalist-Uploads\testing
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\179745-Akanthomyces
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:36:59  INFO D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus
+2019-08-10 23:36:59  INFO Traversing taxon dirs
+2019-08-10 23:36:59  INFO 1 photos total
+2019-08-10 23:36:59  INFO Creating observation for top level taxon dir
+2019-08-10 23:36:59  INFO 1 photos total
+2019-08-10 23:36:59  INFO 2 photos total
+2019-08-10 23:36:59  INFO 3 photos total
+2019-08-10 23:36:59  INFO 4 photos total
+2019-08-10 23:36:59  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\27120-Eurycea bislineata
+2019-08-10 23:36:59  INFO 1 photos total
+2019-08-10 23:36:59  INFO 2 photos total
+2019-08-10 23:36:59  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4263-Phalacrocorax
+2019-08-10 23:36:59  INFO 1 photos total
+2019-08-10 23:36:59  INFO 2 photos total
+2019-08-10 23:36:59  INFO 3 photos total
+2019-08-10 23:36:59  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\46020-Sciurus niger
+2019-08-10 23:36:59  INFO 1 photos total
+2019-08-10 23:36:59  INFO 2 photos total
+2019-08-10 23:36:59  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\46095-Marmota monax
+2019-08-10 23:36:59  INFO 1 photos total
+2019-08-10 23:36:59  INFO 2 photos total
+2019-08-10 23:36:59  INFO 3 photos total
+2019-08-10 23:36:59  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47125-Angiospermae
+2019-08-10 23:36:59  INFO 1 photos total
+2019-08-10 23:37:00  INFO 2 photos total
+2019-08-10 23:37:00  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47731-Lampyridae
+2019-08-10 23:37:00  INFO 1 photos total
+2019-08-10 23:37:00  INFO 2 photos total
+2019-08-10 23:37:00  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47783-Astacoidea
+2019-08-10 23:37:00  INFO 1 photos total
+2019-08-10 23:37:00  INFO 2 photos total
+2019-08-10 23:37:00  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\47951-Staphylinidae
+2019-08-10 23:37:00  INFO 1 photos total
+2019-08-10 23:37:00  INFO 2 photos total
+2019-08-10 23:37:00  INFO 3 photos total
+2019-08-10 23:37:00  INFO 4 photos total
+2019-08-10 23:37:00  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\48124-Tettigoniidae
+2019-08-10 23:37:00  INFO 1 photos total
+2019-08-10 23:37:00  INFO 2 photos total
+2019-08-10 23:37:00  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\4937-Egretta caerulea
+2019-08-10 23:37:00  INFO 1 photos total
+2019-08-10 23:37:00  INFO 2 photos total
+2019-08-10 23:37:00  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\5067-Accipitridae
+2019-08-10 23:37:00  INFO 0 photos total
+2019-08-10 23:37:00  INFO 0 photos total
+2019-08-10 23:37:00  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\1
+2019-08-10 23:37:00  INFO found .done file in D:\workspace\iNaturalist-Uploads\testing\64747-Anaxyrus\2
+2019-08-10 23:37:00  INFO 1 observations total
+2019-08-10 23:37:00  INFO 1 observations found
+2019-08-10 23:37:00  INFO Starting GPX geotagging
+2019-08-10 23:37:00  DEBUG assign_coordinates_to_obs
+2019-08-10 23:37:00  DEBUG accumulate_gps_points()
+2019-08-10 23:37:00  DEBUG parse_gpx()
+2019-08-10 23:37:00  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\hartwood blue.gpx
+2019-08-10 23:37:00  DEBUG Accumulating gps points
+2019-08-10 23:37:00  INFO Found 612 gps points with timestamp
+2019-08-10 23:37:14  DEBUG parse_gpx()
+2019-08-10 23:37:14  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\hartwood both sides.gpx
+2019-08-10 23:37:14  DEBUG Accumulating gps points
+2019-08-10 23:37:14  INFO Found 1231 gps points with timestamp
+2019-08-10 23:37:21  DEBUG parse_gpx()
+2019-08-10 23:37:21  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\hartwood oct 6.gpx
+2019-08-10 23:37:21  DEBUG Accumulating gps points
+2019-08-10 23:37:21  INFO Found 684 gps points with timestamp
+2019-08-10 23:37:21  DEBUG parse_gpx()
+2019-08-10 23:37:21  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\north park kayak launch.gpx
+2019-08-10 23:37:21  DEBUG Accumulating gps points
+2019-08-10 23:37:21  INFO Found 641 gps points with timestamp
+2019-08-10 23:37:21  DEBUG parse_gpx()
+2019-08-10 23:37:21  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\np.gpx
+2019-08-10 23:37:22  DEBUG Accumulating gps points
+2019-08-10 23:37:22  INFO Found 2652 gps points with timestamp
+2019-08-10 23:37:22  DEBUG parse_gpx()
+2019-08-10 23:37:22  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Apr 17, 7_43 PM.gpx
+2019-08-10 23:37:22  DEBUG Accumulating gps points
+2019-08-10 23:37:23  INFO Found 622 gps points with timestamp
+2019-08-10 23:37:23  DEBUG parse_gpx()
+2019-08-10 23:37:23  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Apr 27, 1_48 PM.gpx
+2019-08-10 23:37:23  DEBUG Accumulating gps points
+2019-08-10 23:37:23  INFO Found 387 gps points with timestamp
+2019-08-10 23:37:23  DEBUG parse_gpx()
+2019-08-10 23:37:23  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Aug 03, 2_43 PM.gpx
+2019-08-10 23:37:23  DEBUG Accumulating gps points
+2019-08-10 23:37:23  INFO Found 583 gps points with timestamp
+2019-08-10 23:37:23  DEBUG parse_gpx()
+2019-08-10 23:37:23  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 04, 3_15 PM.gpx
+2019-08-10 23:37:23  DEBUG Accumulating gps points
+2019-08-10 23:37:23  INFO Found 234 gps points with timestamp
+2019-08-10 23:37:23  DEBUG parse_gpx()
+2019-08-10 23:37:23  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 06, 12_51 PM.gpx
+2019-08-10 23:37:23  DEBUG Accumulating gps points
+2019-08-10 23:37:23  INFO Found 527 gps points with timestamp
+2019-08-10 23:37:23  DEBUG parse_gpx()
+2019-08-10 23:37:23  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 06, 1_04 PM.gpx
+2019-08-10 23:37:23  DEBUG Accumulating gps points
+2019-08-10 23:37:23  INFO Found 109 gps points with timestamp
+2019-08-10 23:37:23  DEBUG parse_gpx()
+2019-08-10 23:37:23  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 15, 1_37 PM.gpx
+2019-08-10 23:37:23  DEBUG Accumulating gps points
+2019-08-10 23:37:23  INFO Found 995 gps points with timestamp
+2019-08-10 23:37:23  DEBUG parse_gpx()
+2019-08-10 23:37:23  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 17, 8_33 PM.gpx
+2019-08-10 23:37:23  DEBUG Accumulating gps points
+2019-08-10 23:37:23  INFO Found 548 gps points with timestamp
+2019-08-10 23:37:23  DEBUG parse_gpx()
+2019-08-10 23:37:23  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 22, 6_50 PM.gpx
+2019-08-10 23:37:24  DEBUG Accumulating gps points
+2019-08-10 23:37:24  INFO Found 328 gps points with timestamp
+2019-08-10 23:37:24  DEBUG parse_gpx()
+2019-08-10 23:37:24  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 23, 3_03 PM.gpx
+2019-08-10 23:37:24  DEBUG Accumulating gps points
+2019-08-10 23:37:24  INFO Found 265 gps points with timestamp
+2019-08-10 23:37:24  DEBUG parse_gpx()
+2019-08-10 23:37:24  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 24, 8_16 PM.gpx
+2019-08-10 23:37:24  DEBUG Accumulating gps points
+2019-08-10 23:37:24  INFO Found 429 gps points with timestamp
+2019-08-10 23:37:24  DEBUG parse_gpx()
+2019-08-10 23:37:24  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jul 27, 1_49 PM.gpx
+2019-08-10 23:37:24  DEBUG Accumulating gps points
+2019-08-10 23:37:24  INFO Found 856 gps points with timestamp
+2019-08-10 23:37:24  DEBUG parse_gpx()
+2019-08-10 23:37:24  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - Jun 16, 4_33 PM.gpx
+2019-08-10 23:37:24  DEBUG Accumulating gps points
+2019-08-10 23:37:24  INFO Found 455 gps points with timestamp
+2019-08-10 23:37:24  DEBUG parse_gpx()
+2019-08-10 23:37:24  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\Recording - May 25, 5_01 PM.gpx
+2019-08-10 23:37:24  DEBUG Accumulating gps points
+2019-08-10 23:37:24  INFO Found 391 gps points with timestamp
+2019-08-10 23:37:24  DEBUG parse_gpx()
+2019-08-10 23:37:24  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\sewickley musjroomwalk.gpx
+2019-08-10 23:37:25  DEBUG Accumulating gps points
+2019-08-10 23:37:25  INFO Found 831 gps points with timestamp
+2019-08-10 23:37:25  DEBUG parse_gpx()
+2019-08-10 23:37:25  INFO Parsing D:\workspace\iNaturalist-Uploads\testing\gpx\sewickley post walk.gpx
+2019-08-10 23:37:25  DEBUG Accumulating gps points
+2019-08-10 23:37:25  INFO Found 708 gps points with timestamp
+2019-08-10 23:37:25  INFO Found 14088 gps points total
+2019-08-10 23:37:46  INFO Using GPX
+2019-08-10 23:37:48  DEBUG 2019-04-17T22:34:34+00:00
+2019-08-10 23:37:48  INFO Transmitting observations
+2019-08-10 23:37:48  DEBUG upload_obs()
+2019-08-10 23:37:48  INFO Uploading observation for taxon 179745
+2019-08-10 23:37:48  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:37:49  DEBUG https://www.inaturalist.org:443 "POST /observations.json HTTP/1.1" 200 None
+2019-08-10 23:37:49  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-10 23:37:55  DEBUG https://www.inaturalist.org:443 "POST /observation_photos HTTP/1.1" 200 None
+2019-08-10 23:37:55  INFO Success
+2019-08-10 23:37:55  INFO 1 ok response(s) received out of 1 observation(s)
+2019-08-10 23:37:55  INFO Creating .done files for 1 ok responses
+2019-08-10 23:37:55  INFO Finished with this batch
