@@ -7,6 +7,7 @@ from typing import Union, List, Dict, Tuple
 import pathlib
 import shutil
 import os
+import pendulum
 from pendulum import DateTime
 import PIL
 from PIL import ExifTags, Image
@@ -23,6 +24,8 @@ def nearest_datetime(items: List[DateTime], target: DateTime):
     :return:
     '''
 
+    # TODO: This is way too slow with lots of GPX points
+    # TODO: Build a minimum acceptable difference into this (e.g., > +- 1 hour)
     #Didn't come up with this, pretty neat
     nearest = min(items, key=lambda x: abs(x - target))
     logger.debug(nearest)
@@ -113,12 +116,16 @@ def get_created_date(image: str) -> DateTime:
     and accessed timestamps. Have to go to EXIF for this then.
     
     Exif.Image.DateTimeOriginal is 36867 decimal or 0x9003 hex
+    %Y:%m:%d %H:%M:%S
+    
+    Caveat, it is timezone naive
     '''
     
     date_and_time = PIL.Image.open(image)._getexif()[36867]
 
-    # TODO: Default value of current date is probably best here
+    # TODO: Default to current date?
     if date_and_time is None:
         raise ValueError('No creation date in EXIF')
-
-    return DateTime.strptime(date_and_time,'%Y:%m:%d %H:%M:%S')
+    dt = pendulum.parse(date_and_time, tz='local')
+    
+    return dt

@@ -52,7 +52,7 @@ class Auth:
 def upload_obs(obs: Observation, token:str):
     
     logger.debug('upload_obs()')
-
+    #TODO: Give the observation class a method to generate this JSON
     params = {'observation':
                   {'taxon_id'                           : obs.taxon_id,
                    'species_guess'                      : obs.taxon_name,
@@ -60,9 +60,10 @@ def upload_obs(obs: Observation, token:str):
                    'time_zone'                          : obs.tzone,
                    'description'                        : obs.comment,
                    'tag_list'                           : obs.tags,
-                   #'latitude'                           : obs.coordinates[0],
-                   #'longitude'                          : obs.coordinates[1],
+                   'latitude'                           : obs.coordinates[0],
+                   'longitude'                          : obs.coordinates[1],
                    'positional_accuracy'                : obs.geotag_accuracy,  # meters,
+                   'geoprivacy'                         : obs.geotag_privacy,
 
                    'observation_field_values_attributes':
                        [{'observation_field_id': '', 'value': ''}],

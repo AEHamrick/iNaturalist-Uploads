@@ -60,8 +60,6 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
             #  fine for now with no filename filtering
             if item.is_file():
                 photos.append(Path(taxon_dir) / item.name)
-
-            logger.info('{0} photos total'.format(str(len(photos))))
             
         # If any files exist in the taxon folder itself, create an observation with them as long as no .done file exists unless ignore donefiles is enabled
         if len(photos) > 0 and not (has_donefile(taxon_dir) or flags['IGNORE_DONEFILES']):
@@ -70,6 +68,7 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
                                       taxon_name=taxon_name,
                                       taxon_id=taxon_id)
 
+            logger.info('{0} photos total'.format(str(len(photos))))
             current_obs.observed_on = min([get_created_date(x) for x in current_obs.photos])
             current_obs.tzone =  current_obs.observed_on.timezone_name
             observations.append(current_obs)

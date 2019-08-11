@@ -48,7 +48,7 @@ class Observation():
 		self.taxon_name = taxon_name
 		self.photos = photos
 		self.geotag_accuracy = accuracy
-		self.geotag_privacy = privacy
+		self.geotag_privacy = privacy.lower()
 		
 		self.path = self.photos[0].parent
 
