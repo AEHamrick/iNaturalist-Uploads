@@ -1,55 +1,54 @@
 # iNaturalist-Uploads
 
-There are two scripts here, one basic one which uploads all photos in a folder (upload_folder.py) as one species, and a more complicated one which can handle cases where multiple photos go to one observation(upload_folder.py + import_functions.py + import_gui.py. 
+### Thanks
+To [glmory](https://www.inaturalist.org/people/glmory), the iNaturalist user who brought the idea up on
+the iNaturalist forums and graciously allowed me to fork his uploader to get started.
 
-Both use pyinaturalist to batch upload photos to iNaturalist
+To [Micah Scott](http://twitter.com/scanlime), one of the most thoughtful folks I'm acquainted with, for (besides being a lovely person) a body of video work 
+that has been and still is wonderful encouragement that there are still human ways we can poke at tech instead of engaging with silicon valley,
+drones, AI, or venture capital.
 
-I will skip the simpler script as it is much less useful. 
+### What's iNaturalist?
 
-Scripts make the most sense when you have a large number of photos of the same species. This might happen for example if you were trying to map every tree on a property. The workflow for upload_folders.py consists of separating out the photos so each one is in a folder which contains its common name, scientific name, or taxon ID. You can find the taxon id by going to the iNaturalist species page and noting the number in the url. Taxon numbers are the most likely to work as they are always unique, but in general if you just write any name you remember for a species as the name of the folder it will usually work. 
+I would defer [to them](https://www.inaturalist.org/pages/help#general1)
 
-For example aphids the aphids site is https://www.inaturalist.org/taxa/52381-Aphididae so individual photos of aphids could go in a folder named:
+### What's this thing for?
 
-.../main_folder/52381-Aphididae
-.../main_folder/52381
-.../main_folder/Aphididae 52381
-.../main_folder/Aphids
+The idealized finished version (we might get there eventually) is a utility to facilitate combining photos, GPS data, 
+and metadata (e.g., gender, invasive status, captivity status) to streamline getting your observations onto iNat
 
-To upload multiple photos to an observation it is necessary to create a subfolder in the species folder. So if you have five photos of an aphid it could go into any of the following paths:
-.../main_folder/52381-Aphididae/New Folder
-.../main_folder/52381/Aphids
-.../main_folder/Aphididae 52381/ABCDEFGH
-.../main_folder/Aphids/123456
+[iNaturalist](https://www.inaturalist.org) has a fairly nice full featured uploader--it rules if you have
+one, or five, or ten observations to add. But if you have 50 from a camping trip, or --like me-- you put off cleaning off 
+your camera for a few months and now there are 200, it's a little tedious.
 
-Thus far I have not seen a limit on how many photos can be put in one folder. If you have ten thousand photos of pigeons you want to upload it should work to upload the whole batch. Definitely try it on a small number of photos first though to make sure you don't end up uploading ten thousand photos which you then have to manually edit. 
-
-If you don't have python, I suggest installing Anaconda then pyinaturalist(https://pypi.org/project/pyinaturalist/) . You will 
-then need to get an app ID (https://www.inaturalist.org/oauth/applications/new). It might be necessary to also update a 
-dependency of pyinaturalist to get it to install. 
-
-You will need an app ID and secret before running this, or other, pyinaturalist scripts:
-https://www.inaturalist.org/oauth/applications/new
-
-Before running the script first open this script, add your user name, password, app id, secret, and the time zone of the photos. 
-Then run the script. It should upload every jpg file in the folder as the file you select as a separate observation.
-
-[You will need to make an app to be able to use this code](https://www.inaturalist.org/oauth/applications/new)
-
-[Accepted timezones](https://gist.github.com/mjrulesamrat/0c1f7de951d3c508fb3a20b4b0b33a98)
+It also requires configuring location data unless your 
+photo taking device embeds it in each photo.  The latter isn't much recommended for privacy reasons, so what then?  Hikers
+might be familiar with GPX files recording by a smartphone hiking app or dedicated GPS device; among other things these files 
+typically have a set of GPS points each with a datestamp. From those datestamps we can estimate the correct location of a
+photo plenty close enough for iNaturalist. If you're doing an area survey, or working with endangered species this 
+might not be precise enough, but for most it should be fine.
 
 
-# Docs
+
+### How do I use it?
+
+[WIP]
+
+
+# Reference
 
 ### Packages
 [Pillow](https://pillow.readthedocs.io/en/3.0.x/index.html) (PIL fork)  
 [Pyinaturalist](https://github.com/inbo/pyinaturalist)   
 [pytz](https://pypi.org/project/pytz/)  
 [keyring](https://keyring.readthedocs.io/en/latest/) ([Github](https://github.com/jaraco/keyring))  
-[Tkinter](https://wiki.python.org/moin/TkInter)  
-[PySimpleGUI](https://pysimplegui.readthedocs.io/)
+[PySimpleGUI](https://pysimplegui.readthedocs.io/)  
+[poetry](https://github.com/sdispater/poetry)  
+[pendulum](https://github.com/sdispater/pendulum)
 
-### Reference
-[iNaturalist API v1](https://api.inaturalist.org/v1/docs/)  
+### External docs
+[iNaturalist JSON API ](https://api.inaturalist.org/v1/docs/)  
+[iNaturalist REST API](https://www.inaturalist.org/pages/api+reference)  
 [Exif tag catalog](https://www.exiv2.org/tags.html)  
 [GPX file format](https://www.topografix.com/gpx.asp)
-
+[Accepted timezones](https://gist.github.com/mjrulesamrat/0c1f7de951d3c508fb3a20b4b0b33a98)
