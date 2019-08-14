@@ -13,10 +13,9 @@ import PIL
 from PIL import ExifTags, Image
 from bisect import bisect_left
 from logging import getLogger
-
 logger = getLogger()
-
-def nearest_datetime(items: List[DateTime], target: DateTime):
+from exceptions import GeotagMatchException
+def nearest_datetime(items: List[DateTime], target: DateTime, window:pendulum.duration):
     '''
 
     :param items:  Datetimes to search through
@@ -45,6 +44,8 @@ def nearest_datetime(items: List[DateTime], target: DateTime):
     
     # TODO: Build a minimum acceptable difference into this (e.g., > +- 1 hour)
     logger.debug(needle)
+    if needle < target - window or needle > target + window:
+        raise GeotagMatchException
     return needle
 
 def has_donefile(d: Union[str, pathlib.Path]) -> bool:

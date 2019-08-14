@@ -20,7 +20,7 @@ def set_flags(values:Dict[str,Any]):
     flags['IGNORE_DONEFILES'] = False                          # Ignore .done files in observation folders
                                                                #  i.e., treat as un-uploaded observation
     flags['GPX_DIR_NAME'] = 'gpx'                              # easier to skip this folder in a few places
-
+    flags['GEOTAG_TIMESTAMP_WINDOW'] = 1 # value +- the observation's observed_on timestamp a gpx timestamp must fall to count as a match
     #region: Processing batch level
     flags['USE_PER_BATCH_METADATA'] = False       # Unused; Allow usage of meta-data that applies universally e.g., tag for a bioBlitz event
     flags['WRITE_KEYFILE'] = False                # Unused; The key file will be a delimited file that allows for manual

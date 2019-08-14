@@ -6,7 +6,7 @@ from config import geotag_methods, flags
 from gpx import accumulate_gps_points
 from PIL import Image
 from utility import get_created_date, get_lat_long, nearest_datetime, has_donefile
-
+from exceptions import GeotagMatchException
 from logging import getLogger
 
 logger = getLogger()
@@ -15,7 +15,7 @@ logger = getLogger()
 Assembly of observations from rudimentary data, "business-rule" type observation processing against criteria
 '''
 
-#TODO: toml or similar for observation rules
+#TODO: toml or similar for observation rules?
 
 projects = {}
 
@@ -125,8 +125,12 @@ def assign_coordinates_to_obs(observations: List[Observation], geotag_method:str
         logger.info('Using GPX')
         
         for obs in [x for x in observations if not x.coordinates]:
-            
-            obs.coordinates = gps_points[nearest_datetime(list(gps_points.keys()), obs.observed_on)]
+            try:
+                obs.coordinates = gps_points[nearest_datetime(list(gps_points.keys()), obs.observed_on, flags['GEOTAG_TIMESTAMP_WINDOW'])]
+            except GeotagMatchException:
+                logger.warning('No gpx point can be found +-{0} of {1}'.format(str(flags['GEOTAG_TIMESTAMP_WINDOW']),obs.observed_on))
+                #TODO: Perhaps find a better default
+                obs.coordinates = (0,0)
             obs.geotag_accuracy = flags['GEOTAG_ACCURACY']
 
 
