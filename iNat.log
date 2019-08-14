@@ -7958,3 +7958,2233 @@
 2019-08-11 18:36:41  INFO 349 ok response(s) received out of 349 observation(s)
 2019-08-11 18:36:41  INFO Creating .done files for 349 ok responses
 2019-08-11 18:36:41  INFO Finished with this batch
+2019-08-13 20:46:47  INFO Logging set up
+2019-08-13 20:46:47  INFO Entering event loop
+2019-08-13 20:46:51  INFO Exiting
+2019-08-13 22:25:52  INFO Logging set up
+2019-08-13 22:25:52  INFO Entering event loop
+2019-08-13 22:25:57  INFO Exiting
+2019-08-13 22:26:08  INFO Logging set up
+2019-08-13 22:26:08  INFO Entering event loop
+2019-08-13 22:26:16  INFO Exiting
+2019-08-13 22:30:43  INFO Logging set up
+2019-08-13 22:30:43  INFO Entering event loop
+2019-08-13 22:31:00  INFO Here we go
+2019-08-13 22:31:00  INFO Flags set
+2019-08-13 22:31:00  DEBUG Flags set
+2019-08-13 22:31:00  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-13 22:31:01  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 None
+2019-08-13 22:31:01  DEBUG Auth set
+2019-08-13 22:31:01  DEBUG assemble_skeleton_observations()
+2019-08-13 22:31:01  INFO Found these top level taxon dirs in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\120976-Habroscelimorpha dorsalis
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\121439-Nidulariaceae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\122336-Sarcodon
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125713-Strobilomyces
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125716-Suillus americanus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125724-Pseudoboletus parasiticus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126393-Stomolophus meleagris
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126522-Tubifera ferruginosa
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126831-Omphalotus illudens
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\129027-Exidia recisa
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130203-Hypholoma lateritium
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130868-Tunicata
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130947-Xylobolus frustulatus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143308-Laccaria ochropurpurea
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143393-Cantharellus cinnabarinus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\154735-Galerina marginata
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\179916-Tipulomorpha
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\194656-Zeugomantispa minuta
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\196615-Myliobatiformes
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\199840-Haemorhous mexicanus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\209650-Marmotini
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\211027-Camarops petersii
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23783-Hyla versicolor
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\24268-Pseudacris crucifer
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26695-Scaphiopus holbrookii
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26909-Plethodontidae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\27186-Plethodon cinereus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\29768-Lampropeltis
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\30678-Agkistrodon contortrix
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\319123-Meleagris
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\338324-Myxogastria
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\362502-Inocybe tahquamenonensis
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\43095-Leporidae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\4328-Pelecanus occidentalis
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\45933-Sciuridae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47114-Gastropoda
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47118-Araneae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47125-Angiospermae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47348-Cantharellus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47680-Lycogala epidendrum
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47685-Mycetozoa
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47851-Quercus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48139-Salticidae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48246-Hypomyces
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48419-Amanita
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48422-Hydnum
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48431-Laetiporus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48475-Ganoderma
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48686-Typha
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48804-Hypoxylon
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48961-Symplocarpus foetidus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49158-Hericium erinaceus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49465-Trillium
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49477-Monotropa uniflora
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49552-Scutigera coleoptrata
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49567-Carabidae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49568-Cicindela
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501333-Exsudoporus frostii
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501610-Cantharellus appalachiensis
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\50817-Auricularia
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52529-Phyllotopsis nidulans
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52911-Dolichovespula maculata
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53490-Suillus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53714-Grifola frondosa
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54067-Marasmius
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54321-Parmeliaceae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54545-Lepisosteidae
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54960-Nematoda
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55483-Fuligo septica
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55556-Oncopeltus fasciatus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55591-Lepista
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55922-Mycena
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\56318-Coprinellus micaceus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\59675-Pyrrharctia isabella
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61256-Leptoglossus phyllopus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61998-Steatoda
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63036-Oecanthus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63488-Tylopilus alboater
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64076-Pholiota
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\66012-Lithobates sylvaticus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\67662-Geophilomorpha
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\68855-Physarum polycephalum
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\70222-Entoloma abortivum
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\787944-Pseudoinonotus dryadeus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\81769-Blattodea
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\82117-Dolomedes tenebrosus
+2019-08-13 22:31:01  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea
+2019-08-13 22:31:01  INFO Traversing taxon dirs
+2019-08-13 22:31:01  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\1
+2019-08-13 22:31:01  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\2
+2019-08-13 22:31:01  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\3
+2019-08-13 22:31:01  INFO Creating observation
+2019-08-13 22:31:01  INFO 3 photos total
+2019-08-13 22:31:01  DEBUG Importing BlpImagePlugin
+2019-08-13 22:31:01  DEBUG Importing BmpImagePlugin
+2019-08-13 22:31:01  DEBUG Importing BufrStubImagePlugin
+2019-08-13 22:31:01  DEBUG Importing CurImagePlugin
+2019-08-13 22:31:01  DEBUG Importing DcxImagePlugin
+2019-08-13 22:31:01  DEBUG Importing DdsImagePlugin
+2019-08-13 22:31:01  DEBUG Importing EpsImagePlugin
+2019-08-13 22:31:01  DEBUG Importing FitsStubImagePlugin
+2019-08-13 22:31:01  DEBUG Importing FliImagePlugin
+2019-08-13 22:31:01  DEBUG Importing FpxImagePlugin
+2019-08-13 22:31:01  DEBUG Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-08-13 22:31:01  DEBUG Importing FtexImagePlugin
+2019-08-13 22:31:01  DEBUG Importing GbrImagePlugin
+2019-08-13 22:31:01  DEBUG Importing GifImagePlugin
+2019-08-13 22:31:01  DEBUG Importing GribStubImagePlugin
+2019-08-13 22:31:01  DEBUG Importing Hdf5StubImagePlugin
+2019-08-13 22:31:01  DEBUG Importing IcnsImagePlugin
+2019-08-13 22:31:01  DEBUG Importing IcoImagePlugin
+2019-08-13 22:31:01  DEBUG Importing ImImagePlugin
+2019-08-13 22:31:01  DEBUG Importing ImtImagePlugin
+2019-08-13 22:31:01  DEBUG Importing IptcImagePlugin
+2019-08-13 22:31:01  DEBUG Importing JpegImagePlugin
+2019-08-13 22:31:01  DEBUG Importing Jpeg2KImagePlugin
+2019-08-13 22:31:01  DEBUG Importing McIdasImagePlugin
+2019-08-13 22:31:01  DEBUG Importing MicImagePlugin
+2019-08-13 22:31:01  DEBUG Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-08-13 22:31:01  DEBUG Importing MpegImagePlugin
+2019-08-13 22:31:01  DEBUG Importing MpoImagePlugin
+2019-08-13 22:31:01  DEBUG Importing MspImagePlugin
+2019-08-13 22:31:01  DEBUG Importing PalmImagePlugin
+2019-08-13 22:31:01  DEBUG Importing PcdImagePlugin
+2019-08-13 22:31:01  DEBUG Importing PcxImagePlugin
+2019-08-13 22:31:01  DEBUG Importing PdfImagePlugin
+2019-08-13 22:31:01  DEBUG Importing PixarImagePlugin
+2019-08-13 22:31:01  DEBUG Importing PngImagePlugin
+2019-08-13 22:31:01  DEBUG Importing PpmImagePlugin
+2019-08-13 22:31:01  DEBUG Importing PsdImagePlugin
+2019-08-13 22:31:01  DEBUG Importing SgiImagePlugin
+2019-08-13 22:31:01  DEBUG Importing SpiderImagePlugin
+2019-08-13 22:31:01  DEBUG Importing SunImagePlugin
+2019-08-13 22:31:01  DEBUG Importing TgaImagePlugin
+2019-08-13 22:31:01  DEBUG Importing TiffImagePlugin
+2019-08-13 22:31:01  DEBUG Importing WebPImagePlugin
+2019-08-13 22:31:01  DEBUG Importing WmfImagePlugin
+2019-08-13 22:31:01  DEBUG Importing XbmImagePlugin
+2019-08-13 22:31:01  DEBUG Importing XpmImagePlugin
+2019-08-13 22:31:01  DEBUG Importing XVThumbImagePlugin
+2019-08-13 22:32:17  INFO Logging set up
+2019-08-13 22:32:17  INFO Entering event loop
+2019-08-13 22:32:29  INFO Here we go
+2019-08-13 22:32:29  INFO Flags set
+2019-08-13 22:32:29  DEBUG Flags set
+2019-08-13 22:32:29  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-13 22:32:29  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 141
+2019-08-13 22:32:29  DEBUG Auth set
+2019-08-13 22:32:29  DEBUG assemble_skeleton_observations()
+2019-08-13 22:32:29  INFO Found these top level taxon dirs in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\120976-Habroscelimorpha dorsalis
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\121439-Nidulariaceae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\122336-Sarcodon
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125713-Strobilomyces
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125716-Suillus americanus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125724-Pseudoboletus parasiticus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126393-Stomolophus meleagris
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126522-Tubifera ferruginosa
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126831-Omphalotus illudens
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\129027-Exidia recisa
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130203-Hypholoma lateritium
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130868-Tunicata
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130947-Xylobolus frustulatus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143308-Laccaria ochropurpurea
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143393-Cantharellus cinnabarinus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\154735-Galerina marginata
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\179916-Tipulomorpha
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\194656-Zeugomantispa minuta
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\196615-Myliobatiformes
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\199840-Haemorhous mexicanus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\209650-Marmotini
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\211027-Camarops petersii
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23783-Hyla versicolor
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\24268-Pseudacris crucifer
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26695-Scaphiopus holbrookii
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26909-Plethodontidae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\27186-Plethodon cinereus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\29768-Lampropeltis
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\30678-Agkistrodon contortrix
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\319123-Meleagris
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\338324-Myxogastria
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\362502-Inocybe tahquamenonensis
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\43095-Leporidae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\4328-Pelecanus occidentalis
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\45933-Sciuridae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47114-Gastropoda
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47118-Araneae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47125-Angiospermae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47348-Cantharellus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47680-Lycogala epidendrum
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47685-Mycetozoa
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47851-Quercus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48139-Salticidae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48246-Hypomyces
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48419-Amanita
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48422-Hydnum
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48431-Laetiporus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48475-Ganoderma
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48686-Typha
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48804-Hypoxylon
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48961-Symplocarpus foetidus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49158-Hericium erinaceus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49465-Trillium
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49477-Monotropa uniflora
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49552-Scutigera coleoptrata
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49567-Carabidae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49568-Cicindela
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501333-Exsudoporus frostii
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501610-Cantharellus appalachiensis
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\50817-Auricularia
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52529-Phyllotopsis nidulans
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52911-Dolichovespula maculata
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53490-Suillus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53714-Grifola frondosa
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54067-Marasmius
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54321-Parmeliaceae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54545-Lepisosteidae
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54960-Nematoda
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55483-Fuligo septica
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55556-Oncopeltus fasciatus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55591-Lepista
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55922-Mycena
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\56318-Coprinellus micaceus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\59675-Pyrrharctia isabella
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61256-Leptoglossus phyllopus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61998-Steatoda
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63036-Oecanthus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63488-Tylopilus alboater
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64076-Pholiota
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\66012-Lithobates sylvaticus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\67662-Geophilomorpha
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\68855-Physarum polycephalum
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\70222-Entoloma abortivum
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\787944-Pseudoinonotus dryadeus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\81769-Blattodea
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\82117-Dolomedes tenebrosus
+2019-08-13 22:32:29  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea
+2019-08-13 22:32:29  INFO Traversing taxon dirs
+2019-08-13 22:32:29  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\1
+2019-08-13 22:32:29  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\2
+2019-08-13 22:32:29  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\3
+2019-08-13 22:32:29  INFO Creating observation
+2019-08-13 22:32:29  INFO 3 photos total
+2019-08-13 22:32:29  DEBUG Importing BlpImagePlugin
+2019-08-13 22:32:29  DEBUG Importing BmpImagePlugin
+2019-08-13 22:32:29  DEBUG Importing BufrStubImagePlugin
+2019-08-13 22:32:29  DEBUG Importing CurImagePlugin
+2019-08-13 22:32:29  DEBUG Importing DcxImagePlugin
+2019-08-13 22:32:29  DEBUG Importing DdsImagePlugin
+2019-08-13 22:32:29  DEBUG Importing EpsImagePlugin
+2019-08-13 22:32:29  DEBUG Importing FitsStubImagePlugin
+2019-08-13 22:32:29  DEBUG Importing FliImagePlugin
+2019-08-13 22:32:29  DEBUG Importing FpxImagePlugin
+2019-08-13 22:32:29  DEBUG Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-08-13 22:32:29  DEBUG Importing FtexImagePlugin
+2019-08-13 22:32:29  DEBUG Importing GbrImagePlugin
+2019-08-13 22:32:29  DEBUG Importing GifImagePlugin
+2019-08-13 22:32:29  DEBUG Importing GribStubImagePlugin
+2019-08-13 22:32:29  DEBUG Importing Hdf5StubImagePlugin
+2019-08-13 22:32:29  DEBUG Importing IcnsImagePlugin
+2019-08-13 22:32:29  DEBUG Importing IcoImagePlugin
+2019-08-13 22:32:29  DEBUG Importing ImImagePlugin
+2019-08-13 22:32:29  DEBUG Importing ImtImagePlugin
+2019-08-13 22:32:29  DEBUG Importing IptcImagePlugin
+2019-08-13 22:32:29  DEBUG Importing JpegImagePlugin
+2019-08-13 22:32:29  DEBUG Importing Jpeg2KImagePlugin
+2019-08-13 22:32:29  DEBUG Importing McIdasImagePlugin
+2019-08-13 22:32:29  DEBUG Importing MicImagePlugin
+2019-08-13 22:32:29  DEBUG Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-08-13 22:32:29  DEBUG Importing MpegImagePlugin
+2019-08-13 22:32:29  DEBUG Importing MpoImagePlugin
+2019-08-13 22:32:29  DEBUG Importing MspImagePlugin
+2019-08-13 22:32:29  DEBUG Importing PalmImagePlugin
+2019-08-13 22:32:29  DEBUG Importing PcdImagePlugin
+2019-08-13 22:32:29  DEBUG Importing PcxImagePlugin
+2019-08-13 22:32:29  DEBUG Importing PdfImagePlugin
+2019-08-13 22:32:30  DEBUG Importing PixarImagePlugin
+2019-08-13 22:32:30  DEBUG Importing PngImagePlugin
+2019-08-13 22:32:30  DEBUG Importing PpmImagePlugin
+2019-08-13 22:32:30  DEBUG Importing PsdImagePlugin
+2019-08-13 22:32:30  DEBUG Importing SgiImagePlugin
+2019-08-13 22:32:30  DEBUG Importing SpiderImagePlugin
+2019-08-13 22:32:30  DEBUG Importing SunImagePlugin
+2019-08-13 22:32:30  DEBUG Importing TgaImagePlugin
+2019-08-13 22:32:30  DEBUG Importing TiffImagePlugin
+2019-08-13 22:32:30  DEBUG Importing WebPImagePlugin
+2019-08-13 22:32:30  DEBUG Importing WmfImagePlugin
+2019-08-13 22:32:30  DEBUG Importing XbmImagePlugin
+2019-08-13 22:32:30  DEBUG Importing XpmImagePlugin
+2019-08-13 22:32:30  DEBUG Importing XVThumbImagePlugin
+2019-08-13 22:33:24  INFO Logging set up
+2019-08-13 22:33:24  INFO Entering event loop
+2019-08-13 22:33:33  INFO Here we go
+2019-08-13 22:33:33  INFO Flags set
+2019-08-13 22:33:33  DEBUG Flags set
+2019-08-13 22:33:33  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-13 22:33:33  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 None
+2019-08-13 22:33:33  DEBUG Auth set
+2019-08-13 22:33:33  DEBUG assemble_skeleton_observations()
+2019-08-13 22:33:33  INFO Found these top level taxon dirs in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\120976-Habroscelimorpha dorsalis
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\121439-Nidulariaceae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\122336-Sarcodon
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125713-Strobilomyces
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125716-Suillus americanus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125724-Pseudoboletus parasiticus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126393-Stomolophus meleagris
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126522-Tubifera ferruginosa
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126831-Omphalotus illudens
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\129027-Exidia recisa
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130203-Hypholoma lateritium
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130868-Tunicata
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130947-Xylobolus frustulatus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143308-Laccaria ochropurpurea
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143393-Cantharellus cinnabarinus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\154735-Galerina marginata
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\179916-Tipulomorpha
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\194656-Zeugomantispa minuta
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\196615-Myliobatiformes
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\199840-Haemorhous mexicanus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\209650-Marmotini
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\211027-Camarops petersii
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23783-Hyla versicolor
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\24268-Pseudacris crucifer
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26695-Scaphiopus holbrookii
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26909-Plethodontidae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\27186-Plethodon cinereus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\29768-Lampropeltis
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\30678-Agkistrodon contortrix
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\319123-Meleagris
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\338324-Myxogastria
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\362502-Inocybe tahquamenonensis
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\43095-Leporidae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\4328-Pelecanus occidentalis
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\45933-Sciuridae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47114-Gastropoda
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47118-Araneae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47125-Angiospermae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47348-Cantharellus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47680-Lycogala epidendrum
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47685-Mycetozoa
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47851-Quercus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48139-Salticidae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48246-Hypomyces
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48419-Amanita
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48422-Hydnum
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48431-Laetiporus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48475-Ganoderma
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48686-Typha
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48804-Hypoxylon
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48961-Symplocarpus foetidus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49158-Hericium erinaceus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49465-Trillium
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49477-Monotropa uniflora
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49552-Scutigera coleoptrata
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49567-Carabidae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49568-Cicindela
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501333-Exsudoporus frostii
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501610-Cantharellus appalachiensis
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\50817-Auricularia
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52529-Phyllotopsis nidulans
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52911-Dolichovespula maculata
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53490-Suillus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53714-Grifola frondosa
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54067-Marasmius
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54321-Parmeliaceae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54545-Lepisosteidae
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54960-Nematoda
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55483-Fuligo septica
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55556-Oncopeltus fasciatus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55591-Lepista
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55922-Mycena
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\56318-Coprinellus micaceus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\59675-Pyrrharctia isabella
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61256-Leptoglossus phyllopus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61998-Steatoda
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63036-Oecanthus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63488-Tylopilus alboater
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64076-Pholiota
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\66012-Lithobates sylvaticus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\67662-Geophilomorpha
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\68855-Physarum polycephalum
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\70222-Entoloma abortivum
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\787944-Pseudoinonotus dryadeus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\81769-Blattodea
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\82117-Dolomedes tenebrosus
+2019-08-13 22:33:33  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea
+2019-08-13 22:33:33  INFO Traversing taxon dirs
+2019-08-13 22:33:51  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\1
+2019-08-13 22:33:51  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\2
+2019-08-13 22:33:51  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\3
+2019-08-13 22:33:51  INFO Creating observation
+2019-08-13 22:33:51  INFO 3 photos total
+2019-08-13 22:33:51  DEBUG Importing BlpImagePlugin
+2019-08-13 22:33:51  DEBUG Importing BmpImagePlugin
+2019-08-13 22:33:51  DEBUG Importing BufrStubImagePlugin
+2019-08-13 22:33:51  DEBUG Importing CurImagePlugin
+2019-08-13 22:33:51  DEBUG Importing DcxImagePlugin
+2019-08-13 22:33:51  DEBUG Importing DdsImagePlugin
+2019-08-13 22:33:51  DEBUG Importing EpsImagePlugin
+2019-08-13 22:33:51  DEBUG Importing FitsStubImagePlugin
+2019-08-13 22:33:51  DEBUG Importing FliImagePlugin
+2019-08-13 22:33:51  DEBUG Importing FpxImagePlugin
+2019-08-13 22:33:51  DEBUG Image: failed to import FpxImagePlugin: No module named 'olefile'
+2019-08-13 22:33:51  DEBUG Importing FtexImagePlugin
+2019-08-13 22:33:51  DEBUG Importing GbrImagePlugin
+2019-08-13 22:33:51  DEBUG Importing GifImagePlugin
+2019-08-13 22:33:51  DEBUG Importing GribStubImagePlugin
+2019-08-13 22:33:51  DEBUG Importing Hdf5StubImagePlugin
+2019-08-13 22:33:51  DEBUG Importing IcnsImagePlugin
+2019-08-13 22:33:51  DEBUG Importing IcoImagePlugin
+2019-08-13 22:33:51  DEBUG Importing ImImagePlugin
+2019-08-13 22:33:51  DEBUG Importing ImtImagePlugin
+2019-08-13 22:33:51  DEBUG Importing IptcImagePlugin
+2019-08-13 22:33:51  DEBUG Importing JpegImagePlugin
+2019-08-13 22:33:51  DEBUG Importing Jpeg2KImagePlugin
+2019-08-13 22:33:51  DEBUG Importing McIdasImagePlugin
+2019-08-13 22:33:51  DEBUG Importing MicImagePlugin
+2019-08-13 22:33:51  DEBUG Image: failed to import MicImagePlugin: No module named 'olefile'
+2019-08-13 22:33:51  DEBUG Importing MpegImagePlugin
+2019-08-13 22:33:51  DEBUG Importing MpoImagePlugin
+2019-08-13 22:33:51  DEBUG Importing MspImagePlugin
+2019-08-13 22:33:51  DEBUG Importing PalmImagePlugin
+2019-08-13 22:33:51  DEBUG Importing PcdImagePlugin
+2019-08-13 22:33:51  DEBUG Importing PcxImagePlugin
+2019-08-13 22:33:51  DEBUG Importing PdfImagePlugin
+2019-08-13 22:33:51  DEBUG Importing PixarImagePlugin
+2019-08-13 22:33:51  DEBUG Importing PngImagePlugin
+2019-08-13 22:33:51  DEBUG Importing PpmImagePlugin
+2019-08-13 22:33:51  DEBUG Importing PsdImagePlugin
+2019-08-13 22:33:51  DEBUG Importing SgiImagePlugin
+2019-08-13 22:33:51  DEBUG Importing SpiderImagePlugin
+2019-08-13 22:33:51  DEBUG Importing SunImagePlugin
+2019-08-13 22:33:51  DEBUG Importing TgaImagePlugin
+2019-08-13 22:33:51  DEBUG Importing TiffImagePlugin
+2019-08-13 22:33:51  DEBUG Importing WebPImagePlugin
+2019-08-13 22:33:51  DEBUG Importing WmfImagePlugin
+2019-08-13 22:33:51  DEBUG Importing XbmImagePlugin
+2019-08-13 22:33:51  DEBUG Importing XpmImagePlugin
+2019-08-13 22:33:51  DEBUG Importing XVThumbImagePlugin
+2019-08-13 22:34:25  INFO Logging set up
+2019-08-13 22:34:25  INFO Entering event loop
+2019-08-13 22:34:41  INFO Here we go
+2019-08-13 22:34:41  INFO Flags set
+2019-08-13 22:34:41  DEBUG Flags set
+2019-08-13 22:34:41  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-13 22:34:42  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 140
+2019-08-13 22:34:42  DEBUG Auth set
+2019-08-13 22:34:42  DEBUG assemble_skeleton_observations()
+2019-08-13 22:34:42  INFO Found these top level taxon dirs in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\120976-Habroscelimorpha dorsalis
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\121439-Nidulariaceae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\122336-Sarcodon
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125713-Strobilomyces
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125716-Suillus americanus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125724-Pseudoboletus parasiticus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126393-Stomolophus meleagris
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126522-Tubifera ferruginosa
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126831-Omphalotus illudens
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\129027-Exidia recisa
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130203-Hypholoma lateritium
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130868-Tunicata
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130947-Xylobolus frustulatus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143308-Laccaria ochropurpurea
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143393-Cantharellus cinnabarinus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\154735-Galerina marginata
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\179916-Tipulomorpha
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\194656-Zeugomantispa minuta
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\196615-Myliobatiformes
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\199840-Haemorhous mexicanus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\209650-Marmotini
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\211027-Camarops petersii
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23783-Hyla versicolor
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\24268-Pseudacris crucifer
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26695-Scaphiopus holbrookii
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26909-Plethodontidae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\27186-Plethodon cinereus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\29768-Lampropeltis
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\30678-Agkistrodon contortrix
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\319123-Meleagris
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\338324-Myxogastria
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\362502-Inocybe tahquamenonensis
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\43095-Leporidae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\4328-Pelecanus occidentalis
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\45933-Sciuridae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47114-Gastropoda
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47118-Araneae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47125-Angiospermae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47348-Cantharellus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47680-Lycogala epidendrum
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47685-Mycetozoa
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47851-Quercus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48139-Salticidae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48246-Hypomyces
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48419-Amanita
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48422-Hydnum
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48431-Laetiporus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48475-Ganoderma
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48686-Typha
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48804-Hypoxylon
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48961-Symplocarpus foetidus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49158-Hericium erinaceus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49465-Trillium
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49477-Monotropa uniflora
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49552-Scutigera coleoptrata
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49567-Carabidae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49568-Cicindela
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501333-Exsudoporus frostii
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501610-Cantharellus appalachiensis
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\50817-Auricularia
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52529-Phyllotopsis nidulans
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52911-Dolichovespula maculata
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53490-Suillus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53714-Grifola frondosa
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54067-Marasmius
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54321-Parmeliaceae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54545-Lepisosteidae
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54960-Nematoda
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55483-Fuligo septica
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55556-Oncopeltus fasciatus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55591-Lepista
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55922-Mycena
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\56318-Coprinellus micaceus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\59675-Pyrrharctia isabella
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61256-Leptoglossus phyllopus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61998-Steatoda
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63036-Oecanthus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63488-Tylopilus alboater
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64076-Pholiota
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\66012-Lithobates sylvaticus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\67662-Geophilomorpha
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\68855-Physarum polycephalum
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\70222-Entoloma abortivum
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\787944-Pseudoinonotus dryadeus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\81769-Blattodea
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\82117-Dolomedes tenebrosus
+2019-08-13 22:34:42  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea
+2019-08-13 22:34:42  INFO Traversing taxon dirs
+2019-08-13 22:34:42  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\1
+2019-08-13 22:34:42  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\2
+2019-08-13 22:34:42  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\3
+2019-08-13 22:34:42  INFO Creating observation
+2019-08-13 22:36:08  INFO Logging set up
+2019-08-13 22:36:08  INFO Entering event loop
+2019-08-13 22:36:17  INFO Here we go
+2019-08-13 22:36:17  INFO Flags set
+2019-08-13 22:36:17  DEBUG Flags set
+2019-08-13 22:36:17  DEBUG Starting new HTTPS connection (1): www.inaturalist.org:443
+2019-08-13 22:36:17  DEBUG https://www.inaturalist.org:443 "POST /oauth/token HTTP/1.1" 200 141
+2019-08-13 22:36:17  DEBUG Auth set
+2019-08-13 22:36:17  DEBUG assemble_skeleton_observations()
+2019-08-13 22:36:17  INFO Found these top level taxon dirs in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\120976-Habroscelimorpha dorsalis
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\121439-Nidulariaceae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\122336-Sarcodon
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125713-Strobilomyces
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125716-Suillus americanus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125724-Pseudoboletus parasiticus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126393-Stomolophus meleagris
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126522-Tubifera ferruginosa
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126831-Omphalotus illudens
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\129027-Exidia recisa
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130203-Hypholoma lateritium
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130868-Tunicata
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130947-Xylobolus frustulatus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143308-Laccaria ochropurpurea
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143393-Cantharellus cinnabarinus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\154735-Galerina marginata
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\179916-Tipulomorpha
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\194656-Zeugomantispa minuta
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\196615-Myliobatiformes
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\199840-Haemorhous mexicanus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\209650-Marmotini
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\211027-Camarops petersii
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23783-Hyla versicolor
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\24268-Pseudacris crucifer
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26695-Scaphiopus holbrookii
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26909-Plethodontidae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\27186-Plethodon cinereus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\29768-Lampropeltis
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\30678-Agkistrodon contortrix
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\319123-Meleagris
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\338324-Myxogastria
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\362502-Inocybe tahquamenonensis
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\43095-Leporidae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\4328-Pelecanus occidentalis
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\45933-Sciuridae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47114-Gastropoda
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47118-Araneae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47125-Angiospermae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47348-Cantharellus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47680-Lycogala epidendrum
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47685-Mycetozoa
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47851-Quercus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48139-Salticidae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48246-Hypomyces
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48419-Amanita
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48422-Hydnum
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48431-Laetiporus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48475-Ganoderma
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48686-Typha
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48804-Hypoxylon
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48961-Symplocarpus foetidus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49158-Hericium erinaceus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49465-Trillium
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49477-Monotropa uniflora
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49552-Scutigera coleoptrata
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49567-Carabidae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49568-Cicindela
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501333-Exsudoporus frostii
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501610-Cantharellus appalachiensis
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\50817-Auricularia
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52529-Phyllotopsis nidulans
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52911-Dolichovespula maculata
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53490-Suillus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53714-Grifola frondosa
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54067-Marasmius
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54321-Parmeliaceae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54545-Lepisosteidae
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54960-Nematoda
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55483-Fuligo septica
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55556-Oncopeltus fasciatus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55591-Lepista
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55922-Mycena
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\56318-Coprinellus micaceus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\59675-Pyrrharctia isabella
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61256-Leptoglossus phyllopus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61998-Steatoda
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63036-Oecanthus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63488-Tylopilus alboater
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64076-Pholiota
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\66012-Lithobates sylvaticus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\67662-Geophilomorpha
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\68855-Physarum polycephalum
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\70222-Entoloma abortivum
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\787944-Pseudoinonotus dryadeus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\81769-Blattodea
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\82117-Dolomedes tenebrosus
+2019-08-13 22:36:17  INFO D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea
+2019-08-13 22:36:17  INFO Traversing taxon dirs
+2019-08-13 22:36:17  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\1
+2019-08-13 22:36:17  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\2
+2019-08-13 22:36:17  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\118085-Phlebia\3
+2019-08-13 22:36:17  INFO Creating observation
+2019-08-13 22:36:26  INFO 2 photos total
+2019-08-13 22:36:26  INFO Creating observation
+2019-08-13 22:36:35  INFO 2 photos total
+2019-08-13 22:36:35  INFO Creating observation
+2019-08-13 22:36:35  INFO 2 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\120976-Habroscelimorpha dorsalis
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 2 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\121439-Nidulariaceae
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\122336-Sarcodon
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 3 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125713-Strobilomyces\1
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125713-Strobilomyces\2
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 2 photos total
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125716-Suillus americanus
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 5 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\125724-Pseudoboletus parasiticus
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 4 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126393-Stomolophus meleagris
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126522-Tubifera ferruginosa
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\126831-Omphalotus illudens
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 2 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\129027-Exidia recisa\1
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\129027-Exidia recisa\2
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\129027-Exidia recisa\3
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130203-Hypholoma lateritium\1
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130203-Hypholoma lateritium\2
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130203-Hypholoma lateritium\3
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 4 photos total
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 2 photos total
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 4 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130868-Tunicata
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 2 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\130947-Xylobolus frustulatus
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143308-Laccaria ochropurpurea
+2019-08-13 22:36:36  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:36  INFO 2 photos total
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143393-Cantharellus cinnabarinus\1
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143393-Cantharellus cinnabarinus\2
+2019-08-13 22:36:36  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\143393-Cantharellus cinnabarinus\3
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 1 photos total
+2019-08-13 22:36:36  INFO Creating observation
+2019-08-13 22:36:36  INFO 3 photos total
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 2 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\154735-Galerina marginata
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 3 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\179916-Tipulomorpha
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\194656-Zeugomantispa minuta
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 5 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\196615-Myliobatiformes
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\199840-Haemorhous mexicanus
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 2 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\209650-Marmotini
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\211027-Camarops petersii\1
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 3 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23783-Hyla versicolor
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 2 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea\1
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea\2
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea\3
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\23969-Hyla cinerea\4
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 2 photos total
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\24268-Pseudacris crucifer
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 3 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26695-Scaphiopus holbrookii
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 2 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26909-Plethodontidae\1
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\26909-Plethodontidae\2
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 2 photos total
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 5 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\27186-Plethodon cinereus\1
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\29768-Lampropeltis
+2019-08-13 22:36:37  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:37  INFO 2 photos total
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\1
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\2
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\3
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\4
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\5
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\6
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\7
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\8
+2019-08-13 22:36:37  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\3-Aves\9
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:37  INFO Creating observation
+2019-08-13 22:36:37  INFO 1 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\30678-Agkistrodon contortrix
+2019-08-13 22:36:38  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\319123-Meleagris
+2019-08-13 22:36:38  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\338324-Myxogastria
+2019-08-13 22:36:38  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:38  INFO 3 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\362502-Inocybe tahquamenonensis\1
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\362502-Inocybe tahquamenonensis\2
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\43095-Leporidae
+2019-08-13 22:36:38  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\4328-Pelecanus occidentalis
+2019-08-13 22:36:38  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\45933-Sciuridae
+2019-08-13 22:36:38  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47114-Gastropoda\1
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47114-Gastropoda\2
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\1
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\10
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\11
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\2
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\3
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\4
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\5
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\6
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\7
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\8
+2019-08-13 22:36:38  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47115-Mollusca\9
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 1 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:38  INFO Creating observation
+2019-08-13 22:36:38  INFO 2 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 2 photos total
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47118-Araneae\1
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47118-Araneae\2
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47118-Araneae\3
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 2 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47125-Angiospermae
+2019-08-13 22:36:39  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:39  INFO 2 photos total
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera\1
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera\2
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera\3
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera\4
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera\5
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera\6
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47157-Lepidoptera\7
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\1
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\10
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\11
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\12
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\13
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\14
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\15
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\16
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\17
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\18
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\19
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\2
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\20
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\21
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\22
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\23
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\24
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\3
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\4
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\5
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\6
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\7
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\8
+2019-08-13 22:36:39  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47158-Insecta\9
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 2 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 2 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 2 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 3 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 2 photos total
+2019-08-13 22:36:39  INFO Creating observation
+2019-08-13 22:36:39  INFO 1 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 1 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 1 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 1 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 1 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\1
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\10
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\11
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\12
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\13
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\14
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\15
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\16
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\17
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\18
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\19
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\2
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\20
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\21
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\22
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\23
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\24
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\25
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\26
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\27
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\28
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\29
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\3
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\30
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\31
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\32
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\33
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\34
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\35
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\36
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\37
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\38
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\39
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\4
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\40
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\41
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\42
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\43
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\44
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\45
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\46
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\47
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\48
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\49
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\5
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\50
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\51
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\6
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\7
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\8
+2019-08-13 22:36:40  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47167-Agaricales\9
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 3 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 3 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 3 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 1 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 1 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 3 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 3 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 2 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 3 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 1 photos total
+2019-08-13 22:36:40  INFO Creating observation
+2019-08-13 22:36:40  INFO 4 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 3 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 2 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 7 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 5 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 3 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 2 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 2 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 3 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 2 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 2 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 3 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 7 photos total
+2019-08-13 22:36:41  INFO Creating observation
+2019-08-13 22:36:41  INFO 8 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 5 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 2 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 1 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 2 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 2 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 3 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 3 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 2 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 3 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 1 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 2 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 3 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 2 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 1 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 1 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 3 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 4 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 2 photos total
+2019-08-13 22:36:42  INFO Creating observation
+2019-08-13 22:36:42  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 3 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 1 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\1
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\10
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\11
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\12
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\13
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\14
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\15
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\16
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\17
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\18
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\19
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\2
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\23
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\24
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\25
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\26
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\27
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\28
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\29
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\3
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\30
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\31
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\32
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\33
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\34
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\35
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\36
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\4
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\5
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\7
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\8
+2019-08-13 22:36:43  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47170-Fungi\9
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 1 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 4 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 3 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 1 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 3 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 3 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 3 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 1 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 1 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 3 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:43  INFO Creating observation
+2019-08-13 22:36:43  INFO 2 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 2 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 2 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 2 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 2 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 3 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 4 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 5 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 3 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47348-Cantharellus\1
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47348-Cantharellus\2
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47348-Cantharellus\3
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\1
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\10
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\11
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\12
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\13
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\14
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\2
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\3
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\4
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\5
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\6
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\7
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\8
+2019-08-13 22:36:44  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47380-Polyporales\9
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 2 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 2 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 4 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:44  INFO Creating observation
+2019-08-13 22:36:44  INFO 1 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 1 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 3 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 3 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 1 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 1 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47680-Lycogala epidendrum\1
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47680-Lycogala epidendrum\2
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 3 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 1 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47685-Mycetozoa\1
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 1 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\47851-Quercus
+2019-08-13 22:36:45  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48139-Salticidae
+2019-08-13 22:36:45  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:45  INFO 1 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48246-Hypomyces\1
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48246-Hypomyces\2
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 3 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 3 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula\1
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula\2
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula\3
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48339-Russula\4
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 3 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 3 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48419-Amanita\1
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 1 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48422-Hydnum
+2019-08-13 22:36:45  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\1
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\10
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\11
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\12
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\13
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\14
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\15
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\16
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\17
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\18
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\19
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\2
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\20
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\21
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\22
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\23
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\24
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\25
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\26
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\27
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\28
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\29
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\3
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\30
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\31
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\4
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\5
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\6
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\7
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\8
+2019-08-13 22:36:45  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48427-Boletales\9
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 2 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 5 photos total
+2019-08-13 22:36:45  INFO Creating observation
+2019-08-13 22:36:45  INFO 5 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 4 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 3 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 4 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 1 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 1 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 2 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 3 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 5 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 1 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 2 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 4 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 3 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 5 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 2 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 4 photos total
+2019-08-13 22:36:46  INFO Creating observation
+2019-08-13 22:36:46  INFO 4 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 2 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 4 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 2 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 2 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 2 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 7 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 2 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48431-Laetiporus\1
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48431-Laetiporus\2
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48431-Laetiporus\3
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 2 photos total
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48475-Ganoderma
+2019-08-13 22:36:47  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:47  INFO 5 photos total
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48686-Typha
+2019-08-13 22:36:47  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48804-Hypoxylon
+2019-08-13 22:36:47  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\1
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\10
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\11
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\12
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\13
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\2
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\3
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\4
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\5
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\6
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\7
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\8
+2019-08-13 22:36:47  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48957-Arilus cristatus\9
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 2 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:47  INFO Creating observation
+2019-08-13 22:36:47  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\48961-Symplocarpus foetidus
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia\1
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia\2
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia\3
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49138-Scutellinia\4
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49158-Hericium erinaceus
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49465-Trillium
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49477-Monotropa uniflora
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49552-Scutigera coleoptrata
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 2 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49567-Carabidae\1
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49567-Carabidae\2
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 3 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\49568-Cicindela
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 2 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501333-Exsudoporus frostii\1
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501333-Exsudoporus frostii\2
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\501610-Cantharellus appalachiensis\1
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\50817-Auricularia\1
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\50817-Auricularia\2
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 3 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 2 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52529-Phyllotopsis nidulans
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 3 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\52911-Dolichovespula maculata
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53490-Suillus\1
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53490-Suillus\2
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 3 photos total
+2019-08-13 22:36:48  INFO Creating observation
+2019-08-13 22:36:48  INFO 3 photos total
+2019-08-13 22:36:48  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\53714-Grifola frondosa
+2019-08-13 22:36:48  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:48  INFO 1 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54067-Marasmius
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54321-Parmeliaceae
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54545-Lepisosteidae
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius\1
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius\2
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius\3
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius\4
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius\5
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54597-Lactarius\6
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 4 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 3 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria\1
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria\2
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria\3
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria\4
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54895-Laccaria\5
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 3 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 3 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\54960-Nematoda
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 3 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55483-Fuligo septica\1
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55483-Fuligo septica\2
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55483-Fuligo septica\3
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 3 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55556-Oncopeltus fasciatus
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55591-Lepista
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\55922-Mycena
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\56318-Coprinellus micaceus\1
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\56318-Coprinellus micaceus\2
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\56318-Coprinellus micaceus\3
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\59675-Pyrrharctia isabella\1
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\59675-Pyrrharctia isabella\2
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO Creating observation
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61256-Leptoglossus phyllopus
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 1 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\61998-Steatoda
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:49  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63036-Oecanthus
+2019-08-13 22:36:49  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:49  INFO 2 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\63488-Tylopilus alboater
+2019-08-13 22:36:50  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:50  INFO 2 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64076-Pholiota\1
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64076-Pholiota\2
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 3 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 3 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus\1
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus\2
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus\3
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus\4
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus\5
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\64747-Anaxyrus\6
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 4 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 3 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 3 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 1 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 2 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 1 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\66012-Lithobates sylvaticus
+2019-08-13 22:36:50  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:50  INFO 3 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\67662-Geophilomorpha
+2019-08-13 22:36:50  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:50  INFO 2 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\68855-Physarum polycephalum\2
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 1 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\70222-Entoloma abortivum
+2019-08-13 22:36:50  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:50  INFO 1 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\787944-Pseudoinonotus dryadeus\1
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\787944-Pseudoinonotus dryadeus\2
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 1 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 3 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\81769-Blattodea
+2019-08-13 22:36:50  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:50  INFO 1 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\82117-Dolomedes tenebrosus
+2019-08-13 22:36:50  INFO Creating observation for top level taxon dir
+2019-08-13 22:36:50  INFO 1 photos total
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\1
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\10
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\2
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\3
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\4
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\5
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\6
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\7
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\8
+2019-08-13 22:36:50  INFO found .done file in D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\85493-Crustacea\9
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 2 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 2 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 1 photos total
+2019-08-13 22:36:50  INFO Creating observation
+2019-08-13 22:36:50  INFO 2 photos total
+2019-08-13 22:36:51  INFO Creating observation
+2019-08-13 22:36:51  INFO 3 photos total
+2019-08-13 22:36:51  INFO Creating observation
+2019-08-13 22:36:51  INFO 2 photos total
+2019-08-13 22:36:51  INFO Creating observation
+2019-08-13 22:36:51  INFO 6 photos total
+2019-08-13 22:36:51  INFO Creating observation
+2019-08-13 22:36:51  INFO 2 photos total
+2019-08-13 22:36:51  INFO Creating observation
+2019-08-13 22:36:51  INFO 2 photos total
+2019-08-13 22:36:51  INFO Creating observation
+2019-08-13 22:36:51  INFO 2 photos total
+2019-08-13 22:36:51  INFO 349 observations total
+2019-08-13 22:36:51  INFO 349 observations found
+2019-08-13 22:36:51  INFO Starting GPX geotagging
+2019-08-13 22:36:51  DEBUG assign_coordinates_to_obs
+2019-08-13 22:36:51  DEBUG accumulate_gps_points()
+2019-08-13 22:36:51  DEBUG parse_gpx()
+2019-08-13 22:36:51  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\hartwood blue.gpx
+2019-08-13 22:36:51  DEBUG Accumulating gps points
+2019-08-13 22:36:51  INFO Found 612 gps points with timestamp
+2019-08-13 22:36:51  DEBUG parse_gpx()
+2019-08-13 22:36:51  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\hartwood both sides.gpx
+2019-08-13 22:36:52  DEBUG Accumulating gps points
+2019-08-13 22:36:52  INFO Found 1231 gps points with timestamp
+2019-08-13 22:36:52  DEBUG parse_gpx()
+2019-08-13 22:36:52  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\hartwood oct 6.gpx
+2019-08-13 22:36:52  DEBUG Accumulating gps points
+2019-08-13 22:36:52  INFO Found 684 gps points with timestamp
+2019-08-13 22:36:52  DEBUG parse_gpx()
+2019-08-13 22:36:52  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\north park kayak launch.gpx
+2019-08-13 22:36:52  DEBUG Accumulating gps points
+2019-08-13 22:36:52  INFO Found 641 gps points with timestamp
+2019-08-13 22:36:52  DEBUG parse_gpx()
+2019-08-13 22:36:52  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\np.gpx
+2019-08-13 22:36:53  DEBUG Accumulating gps points
+2019-08-13 22:36:53  INFO Found 2652 gps points with timestamp
+2019-08-13 22:36:53  DEBUG parse_gpx()
+2019-08-13 22:36:53  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Apr 17, 7_43 PM.gpx
+2019-08-13 22:36:53  DEBUG Accumulating gps points
+2019-08-13 22:36:53  INFO Found 622 gps points with timestamp
+2019-08-13 22:36:53  DEBUG parse_gpx()
+2019-08-13 22:36:53  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Apr 27, 1_48 PM.gpx
+2019-08-13 22:36:54  DEBUG Accumulating gps points
+2019-08-13 22:36:54  INFO Found 387 gps points with timestamp
+2019-08-13 22:36:54  DEBUG parse_gpx()
+2019-08-13 22:36:54  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Aug 03, 2_43 PM.gpx
+2019-08-13 22:36:54  DEBUG Accumulating gps points
+2019-08-13 22:36:54  INFO Found 583 gps points with timestamp
+2019-08-13 22:36:54  DEBUG parse_gpx()
+2019-08-13 22:36:54  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Aug 10, 9_43 PM.gpx
+2019-08-13 22:36:54  DEBUG Accumulating gps points
+2019-08-13 22:36:54  INFO Found 902 gps points with timestamp
+2019-08-13 22:36:54  DEBUG parse_gpx()
+2019-08-13 22:36:54  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 04, 3_15 PM.gpx
+2019-08-13 22:36:54  DEBUG Accumulating gps points
+2019-08-13 22:36:54  INFO Found 234 gps points with timestamp
+2019-08-13 22:36:54  DEBUG parse_gpx()
+2019-08-13 22:36:54  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 06, 12_51 PM.gpx
+2019-08-13 22:36:54  DEBUG Accumulating gps points
+2019-08-13 22:36:54  INFO Found 527 gps points with timestamp
+2019-08-13 22:36:54  DEBUG parse_gpx()
+2019-08-13 22:36:54  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 06, 1_04 PM.gpx
+2019-08-13 22:36:54  DEBUG Accumulating gps points
+2019-08-13 22:36:54  INFO Found 109 gps points with timestamp
+2019-08-13 22:36:54  DEBUG parse_gpx()
+2019-08-13 22:36:54  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 15, 1_37 PM.gpx
+2019-08-13 22:36:55  DEBUG Accumulating gps points
+2019-08-13 22:36:55  INFO Found 995 gps points with timestamp
+2019-08-13 22:36:55  DEBUG parse_gpx()
+2019-08-13 22:36:55  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 17, 8_33 PM.gpx
+2019-08-13 22:36:55  DEBUG Accumulating gps points
+2019-08-13 22:36:55  INFO Found 548 gps points with timestamp
+2019-08-13 22:36:55  DEBUG parse_gpx()
+2019-08-13 22:36:55  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 22, 6_50 PM.gpx
+2019-08-13 22:36:55  DEBUG Accumulating gps points
+2019-08-13 22:36:55  INFO Found 328 gps points with timestamp
+2019-08-13 22:36:55  DEBUG parse_gpx()
+2019-08-13 22:36:55  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 23, 3_03 PM.gpx
+2019-08-13 22:36:55  DEBUG Accumulating gps points
+2019-08-13 22:36:55  INFO Found 265 gps points with timestamp
+2019-08-13 22:36:55  DEBUG parse_gpx()
+2019-08-13 22:36:55  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 24, 8_16 PM.gpx
+2019-08-13 22:36:55  DEBUG Accumulating gps points
+2019-08-13 22:36:55  INFO Found 429 gps points with timestamp
+2019-08-13 22:36:55  DEBUG parse_gpx()
+2019-08-13 22:36:55  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jul 27, 1_49 PM.gpx
+2019-08-13 22:36:56  DEBUG Accumulating gps points
+2019-08-13 22:36:56  INFO Found 856 gps points with timestamp
+2019-08-13 22:36:56  DEBUG parse_gpx()
+2019-08-13 22:36:56  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - Jun 16, 4_33 PM.gpx
+2019-08-13 22:36:56  DEBUG Accumulating gps points
+2019-08-13 22:36:56  INFO Found 455 gps points with timestamp
+2019-08-13 22:36:56  DEBUG parse_gpx()
+2019-08-13 22:36:56  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\Recording - May 25, 5_01 PM.gpx
+2019-08-13 22:36:56  DEBUG Accumulating gps points
+2019-08-13 22:36:56  INFO Found 391 gps points with timestamp
+2019-08-13 22:36:56  DEBUG parse_gpx()
+2019-08-13 22:36:56  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\sewickley musjroomwalk.gpx
+2019-08-13 22:36:56  DEBUG Accumulating gps points
+2019-08-13 22:36:56  INFO Found 831 gps points with timestamp
+2019-08-13 22:36:56  DEBUG parse_gpx()
+2019-08-13 22:36:56  INFO Parsing D:\Users\Sir\Pictures\iNaturalist to-upload\Batch\gpx\sewickley post walk.gpx
+2019-08-13 22:36:56  DEBUG Accumulating gps points
+2019-08-13 22:36:57  INFO Found 708 gps points with timestamp
+2019-08-13 22:36:57  INFO Found 14990 timestamped gps points total
+2019-08-13 22:36:57  INFO Using GPX
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T14:02:16-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:38-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T14:51:39-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T14:51:39-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:54:29-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-10T18:33:57-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T14:51:39-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T14:51:39-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T13:31:11-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T14:51:39-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:55:35-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:50:36-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-20T12:22:48-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2018-09-02T14:14:45-04:00
+2019-08-13 22:36:57  DEBUG 2019-04-17T18:34:34-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00
+2019-08-13 22:36:57  DEBUG 2019-08-03T13:44:08-04:00

@@ -11,7 +11,7 @@ import pendulum
 from pendulum import DateTime
 import PIL
 from PIL import ExifTags, Image
-
+from bisect import bisect_left
 from logging import getLogger
 
 logger = getLogger()
@@ -23,14 +23,29 @@ def nearest_datetime(items: List[DateTime], target: DateTime):
     :param target: Datetime to match or come closest to
     :return:
     '''
-
-    # TODO: This is way too slow with lots of GPX points
+    
+    #Didn't come up with this, pretty neat, but ultimately way too slow with lots of points to check
+    # nearest = min(items, key=lambda x: abs(x - target))
+    # logger.debug(nearest)
+    # return nearest
+    
+    #instead sort the input list and use bisect for binary search
+    pos = bisect_left(items, target)
+    if pos == 0:
+        needle = items[0]
+    elif pos == len(items):
+        needle =  items[-1]
+    else:
+        before = items[pos - 1]
+        after = items[pos]
+        if after - target < target - before:
+            needle = after
+        else:
+            needle = before
+    
     # TODO: Build a minimum acceptable difference into this (e.g., > +- 1 hour)
-    #Didn't come up with this, pretty neat
-    nearest = min(items, key=lambda x: abs(x - target))
-    logger.debug(nearest)
-    return nearest
-
+    logger.debug(needle)
+    return needle
 
 def has_donefile(d: Union[str, pathlib.Path]) -> bool:
     '''

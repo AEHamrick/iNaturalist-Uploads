@@ -17,7 +17,7 @@ def set_flags(values:Dict[str,Any]):
     
     #region: Configuration
     flags['USE_SECURE_KEYRING'] = values['USE_SECURE_KEYRING'] # Use system credential store via the keyring module
-    flags['IGNORE_DONEFILES'] = False                          # Ignore .done files in observation folders;
+    flags['IGNORE_DONEFILES'] = False                          # Ignore .done files in observation folders
                                                                #  i.e., treat as un-uploaded observation
     flags['GPX_DIR_NAME'] = 'gpx'                              # easier to skip this folder in a few places
 

@@ -68,6 +68,6 @@ def accumulate_gps_points(gpx_dir: pathlib.Path) -> Dict[datetime, Tuple[str,str
     for gpx in pathlib.Path(gpx_dir).glob('*.gpx'):
         gps_points.update(parse_gpx(gpx))
 
-    logger.info('Found {0} gps points total'.format(str(len(gps_points))))
+    logger.info('Found {0} timestamped gps points total'.format(str(len(gps_points))))
     
     return gps_points

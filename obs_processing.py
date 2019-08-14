@@ -58,11 +58,11 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
                 obs_dirs.append(item)
             # Requirement for use is no other files present besides observation images, so this is
             #  fine for now with no filename filtering
-            if item.is_file():
+            if item.is_file() and not item.name.endswith('.done'):
                 photos.append(Path(taxon_dir) / item.name)
             
         # If any files exist in the taxon folder itself, create an observation with them as long as no .done file exists unless ignore donefiles is enabled
-        if len(photos) > 0 and not (has_donefile(taxon_dir) or flags['IGNORE_DONEFILES']):
+        if len(photos) > 0 and (not has_donefile(taxon_dir) or flags['IGNORE_DONEFILES']):
             logger.info('Creating observation for top level taxon dir')
             current_obs = Observation(photos=photos,
                                       taxon_name=taxon_name,
@@ -77,9 +77,9 @@ def assemble_skeleton_observations(working_dir: Path) -> List[Observation]:
         # Iterate through the observation folders, if any; skip a folder if a .done file exists unless ignore donefiles is enabled
         if len(obs_dirs) > 0:
             # TODO: Test ignore donefiles & add to GUI when working
-            for obs_dir in [x for x in obs_dirs if not (has_donefile(x) or flags['IGNORE_DONEFILES'])]:
+            for obs_dir in [x for x in obs_dirs if (not has_donefile(x) or flags['IGNORE_DONEFILES'])]:
                 logger.info('Creating observation')
-                photos = [Path(obs_dir) / x.name for x in obs_dir.iterdir() if x.is_file()]
+                photos = [Path(obs_dir) / x.name for x in obs_dir.iterdir() if x.is_file() and not x.name.endswith('.done')]
                 logger.info('{0} photos total'.format(str(len(photos))))
                 
                 current_obs = Observation(photos=photos,
