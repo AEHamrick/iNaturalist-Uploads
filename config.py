@@ -16,11 +16,11 @@ def set_flags(values:Dict[str,Any]):
     global flags
     
     #region: Configuration
-    flags['USE_SECURE_KEYRING'] = values['USE_SECURE_KEYRING'] # Use system credential store via the keyring module
+    flags['USE_SECURE_KEYRING'] = values['use_secure_keyring'] # Use system credential store via the keyring module
     flags['IGNORE_DONEFILES'] = False                          # Ignore .done files in observation folders
                                                                #  i.e., treat as un-uploaded observation
     flags['GPX_DIR_NAME'] = 'gpx'                              # easier to skip this folder in a few places
-    flags['GEOTAG_TIMESTAMP_WINDOW'] = 1 # value +- the observation's observed_on timestamp a gpx timestamp must fall to count as a match
+    flags['GEOTAG_TIMESTAMP_WINDOW'] = values['geotag_match_window'] # value +- the observation's observed_on timestamp a gpx timestamp must fall to count as a match
     #region: Processing batch level
     flags['USE_PER_BATCH_METADATA'] = False       # Unused; Allow usage of meta-data that applies universally e.g., tag for a bioBlitz event
     flags['WRITE_KEYFILE'] = False                # Unused; The key file will be a delimited file that allows for manual
@@ -71,5 +71,33 @@ class geotag_privacy(Enum):
     open = 'Public'
     obscured = 'Obscured'
     private = 'Private'
+
+tooltips = {
+    'use_secure_keyring'    : 'Pull credentials from the OS\'s secure password store',
+    'api_user'              : 'iNaturalist username',
+    'api_pass'              : 'iNaturalist password',
+    'api_id'                : 'iNaturalist API ID',
+    'api_secret'            : 'iNaturalist API secret',
+    'geotag_primary_gpx'    : 'Use GPX files as primary geotagging data source',
+    'geotag_primary_exif'   : 'Use EXIF metadata per image as primary geotagging data source',
+    'geotag_primary_manual' : 'Assign no geotagging data programmatically',
+    'geotag_fallback_flag'  : 'If primary geotagging data source has no data, try the other source',
+    'geotag_match_window'   : 'GPX coordinate must be timestamped +- this value in hours to constitute a match to an observation',
+    'geotag_privacy'        : 'Open privacy allows any user to see the exact coordinates of your observation.\n' +\
+                              'Obscured privacy means users will see an observation within a broad geographic area \n' + \
+                              'Private means that no location information will be displayed at all\n' + \
+                              'Obscured privacy is recommended; please consult the documentation before using Open privacy',
+    'use_keyfile'           : '(Unused) Write a keyfile that can be used to manipulate observations\' data before consuming it ' +\
+                              'and submitting the updated observations' ,
+    'geotag_acc'            : 'Radius in meters of the accuracy circle around your observation coordinates',
+    'path_working'          : 'Top level path the application will scan for observations and gpx files' ,
+    'wrk_btn'               : 'Browse for the path your observations are in',
+    'path_key'              : '(Unused) Path to read and write the keyfile ',
+    'key_btn'               : '(Unused)Browse for a path for the keyfile',
+    'path_meta'             : '(Unused) Path to find other metadata files',
+    'mta_btn'               : '(Unused) Browse for metadata file path',
+    'Begin processing'      : 'Begin processing',
+    'Exit'                  : 'Exit'
+}
 
 #endregion

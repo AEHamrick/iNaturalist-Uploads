@@ -23,30 +23,57 @@ def nearest_datetime(items: List[DateTime], target: DateTime, window:pendulum.du
     :return:
     '''
     
-    #Didn't come up with this, pretty neat, but ultimately way too slow with lots of points to check
-    # nearest = min(items, key=lambda x: abs(x - target))
-    # logger.debug(nearest)
-    # return nearest
+    '''
+    Didn't come up with this, pretty neat, but ultimately way too slow with lots of points to check
+    return min(items, key=lambda x: abs(x - target))
     
-    #instead sort the input list and use bisect for binary search
+    Instead sort the input list and use bisect for binary search
+    '''
+    
     pos = bisect_left(items, target)
+    
+    #Edge case for the bisection point being before the first element (i.e., before element 0)
     if pos == 0:
-        needle = items[0]
+        if items[0] - target <= window:
+            closest = items[0]
+        else:
+            raise GeotagMatchException
+    # Edge case for the bisection point being after the last element (i.e., after element -1)
     elif pos == len(items):
-        needle =  items[-1]
+        if target - items[-1] <= window:
+            closest =  items[-1]
+        else:
+            raise GeotagMatchException
     else:
         before = items[pos - 1]
         after = items[pos]
-        if after - target < target - before:
-            needle = after
+        
+        after_diff = after - target
+        before_diff = target - before
+        
+        #Bisection gives a point on either side (i.e., earlier and later) of the target; need to know which one is
+        # closer, temporally speaking
+        
+        #Later timestamp is closest
+        if after_diff < before_diff:
+            
+            if after_diff <= window:
+                closest = after
+            else:
+                #If closest one is outside of the window then the other one necessarily must be
+                raise GeotagMatchException
+        
+        #Earlier timestamp is closest
         else:
-            needle = before
+            if before_diff <= window:
+                closest = before
+            else:
+                #As above
+                raise GeotagMatchException
+        
+    logger.debug(closest)
     
-    # TODO: Build a minimum acceptable difference into this (e.g., > +- 1 hour)
-    logger.debug(needle)
-    if needle < target - window or needle > target + window:
-        raise GeotagMatchException
-    return needle
+    return closest
 
 def has_donefile(d: Union[str, pathlib.Path]) -> bool:
     '''

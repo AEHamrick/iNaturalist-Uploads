@@ -5,7 +5,7 @@ else:
     import PySimpleGUI27 as sg
 
 
-from config import set_flags, flags, geotag_methods
+from config import set_flags, flags, geotag_methods, tooltips
 from obs_processing import *
 from api_interactions import upload_obs, Auth
 from custom_logging import create_logger
@@ -18,11 +18,10 @@ from custom_logging import create_logger
 
 logger = create_logger(Path(__file__).parent, 'iNat')
 
-tooltips = {}
 
 #region: config frame
 config_layout = \
-    [[sg.Checkbox('Use system keyring', key = 'USE_SECURE_KEYRING', default=True, enable_events=True)],
+    [[sg.Checkbox('Use system keyring', key = 'use_secure_keyring', default=True, enable_events=True)],
      [sg.Text('User'),sg.In(default_text='',key='api_user', enable_events=True)],
      [sg.Text('Pass'),sg.In(default_text='',key='api_pass',password_char='*',disabled=True)],
      [sg.Text('App id'),sg.In(default_text='',key='api_id',size=(65, None),disabled=True)],
@@ -52,10 +51,11 @@ options_layout = \
                                     sg.Radio('EXIF', "geotag", key='geotag_primary_exif'),
                                     sg.Radio('Manual (not recommended for large batches)', "geotag", key='geotag_primary_manual')],
      
-     [sg.Checkbox('Geotag fallback (try other source)', key = 'geotag_fallback_flag', default=False,enable_events=True)],
+     [sg.Checkbox('Geotag fallback (try other source)', key = 'geotag_fallback_flag', default=False,enable_events=True),
+      sg.Text('Geotag match window'),sg.InputCombo([0,1,2,5,8,24], default_value=1, key='geotag_match_window', tooltip=None)],
      
      [sg.Text('Geotagging privacy'),sg.InputCombo(['Public','Obscured','Private'], default_value='Obscured', key='geotag_privacy', tooltip=None)],
-     [sg.Checkbox('Use keyfile', key = 'keyfile', disabled=True)],
+     [sg.Checkbox('Use keyfile', key = 'use_keyfile', disabled=True)],
      #TODO: Make sure to note in the tooltips some sensible comparisons for these values
      [sg.Text('Geotagging accuracy'),sg.InputCombo([5,10,50,100,500], default_value=50, key='geotag_acc', tooltip=None)],
     ]
@@ -80,11 +80,14 @@ options = sg.Frame('Options',
 
 file_layout = \
     [[sg.Text('Working folder'),sg.In('',key='path_working'), sg.FolderBrowse(target='path_working',
-                                                                             initial_folder='%UserProfile%\desktop')],
+                                                                             initial_folder='%UserProfile%\desktop',
+                                                                              key='wrk_btn')],
      [sg.Text('Keyfile'), sg.In('', key='path_key',disabled=True), sg.FolderBrowse(target='path_key', disabled=True,
-                                                                               initial_folder='%UserProfile%\desktop')],
+                                                                               initial_folder='%UserProfile%\desktop',
+                                                                               key='key_btn')],
      [sg.Text('Global meta file'), sg.In('', key='path_meta',disabled=True), sg.FolderBrowse(target='path_meta', disabled=True,
-                                                                               initial_folder='%UserProfile%\desktop')]
+                                                                               initial_folder='%UserProfile%\desktop',
+                                                                               key='mta_btn')]
     ]
 
 file = sg.Frame('Files',
@@ -129,6 +132,10 @@ layout = [[config],
           [sg.Exit()]]
 
 window = sg.Window('iNaturalist bulk upload', layout)
+
+for k in window.AllKeysDict.keys():
+    window.Element(k).Tooltip = tooltips[k]
+
 logger.info('Entering event loop')
 while True:                 # Event Loop
     event, values = window.Read()
@@ -140,7 +147,7 @@ while True:                 # Event Loop
         window.Element('_OUTPUT_').Update(values['_IN_'])
         logger.debug('Window updated')
         
-    if event == 'USE_SECURE_KEYRING':
+    if event == 'use_secure_keyring':
         window.Element('api_pass').Update(disabled=  values['USE_SECURE_KEYRING'])
         window.Element('api_id').Update(disabled=  values['USE_SECURE_KEYRING'])
         window.Element('api_secret').Update(disabled=  values['USE_SECURE_KEYRING'])

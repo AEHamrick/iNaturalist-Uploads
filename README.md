@@ -8,6 +8,8 @@ To [Micah Scott](http://twitter.com/scanlime), one of the most thoughtful folks 
 that has been and still is wonderful encouragement that there are still human ways we can poke at tech instead of engaging with silicon valley,
 drones, AI, or venture capital.
 
+To iNaturalist, of course, not just for making a fascinating platform I greatly enjoy using, but for exposing a set of APIs to make this possible.
+
 ### What's iNaturalist?
 
 I would defer [to them](https://www.inaturalist.org/pages/help#general1)
@@ -28,11 +30,22 @@ typically have a set of GPS points each with a datestamp. From those datestamps 
 photo plenty close enough for iNaturalist. If you're doing an area survey, or working with endangered species this 
 might not be precise enough, but for most it should be fine.
 
-
-
 ### How do I use it?
 
-[WIP]
+#### Requirements
+* Python >= 3.7
+* [poetry](https://github.com/sdispater/poetry) (or, feel free to use another package manager if you want to parse dependencies out of the poetry project files yourself)
+
+#### Installation
+* Install Python
+* Install poetry (typically `pip install poetry` from your shell of choice)
+* Extract the release, mantaining relative paths
+* In your shell, navigate to the extracted files and use the command `poetry install`
+* Poetry will install the required packages; this may take a few minutes
+* The GUI application can be launched with `poetry run python gui.py`
+  
+#### Usage
+* [wip]
 
 
 # Reference
