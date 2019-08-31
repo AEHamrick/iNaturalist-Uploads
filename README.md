@@ -57,7 +57,8 @@ might not be precise enough, but for most it should be fine.
 [keyring](https://keyring.readthedocs.io/en/latest/) ([Github](https://github.com/jaraco/keyring))  
 [PySimpleGUI](https://pysimplegui.readthedocs.io/)  
 [poetry](https://github.com/sdispater/poetry)  
-[pendulum](https://github.com/sdispater/pendulum)
+[pendulum](https://github.com/sdispater/pendulum)  
+[pytest]()
 
 ### External docs
 [iNaturalist JSON API ](https://api.inaturalist.org/v1/docs/)  
